@@ -5,8 +5,13 @@ public class Multiplication6To9 {
         int[] numbers = {6, 7, 8, 9};
         System.out.println("enter the no.: ");
         int n = sc.nextInt();
-        for (int i = numbers[0]; i < numbers[numbers.length]; i++) {
-            System.out.println(n + " * " + i + " = " + n * i);
+        //int initial = numbers[0];
+
+        for (int i = 0; i < numbers.length; i++) {
+            int result = n * numbers[i];
+            System.out.println(n + " * " + numbers[i] + " = " + result);
+            
         }
+
     }
 }
