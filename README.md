@@ -84,12 +84,11 @@ Below are the folders for each branch/module with their descriptions:
 
 ### 🔹 workshop
 
-| Folder/Path                | Description                                   | Links                                  |
-|----------------------------|-----------------------------------------------|---------------------------------------|
-| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             | [Day01 Tasks](workshop/Day01_Task/)    |
-| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            | [Day02 Tasks](workshop/Day02_Task/)    |
-| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            | [Day03 Tasks](workshop/Day03_Task/)    |
-| `...`                      | Further practice-based tasks                  | -                                      |
+| Description                                   | Links                                  |
+|-----------------------------------------------|---------------------------------------|
+| Workshop 01             | ([Workshop Link](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25))   |
+
+
 
 ---
 
