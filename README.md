@@ -40,45 +40,42 @@ Below are the folders for each branch/module with their descriptions:
 
 ### 🔹 main
 
-| Folder/Path                | Description                                      |
-|----------------------------|--------------------------------------------------|
-| `main/README.md`           | General documentation and project overview       |
-| `main/setup-guide.md`      | Setup and environment configuration instructions |
-| `main/utilities/`          | Shared scripts, helper files, or assets          |
+| Folder/Path                | Description                                      | Links                               |
+|----------------------------|--------------------------------------------------|------------------------------------|
+| `main/README.md`           | General documentation and project overview       | [README](main/README.md)            |
 
 ---
 
-
 ### 🔹 core-java
 
-| Folder/Path              | Description                                |
-|--------------------------|--------------------------------------------|
-| `core-java/Day01_Task/`  | Day 1 tasks – Java basics (syntax, variables) |
-| `core-java/Day02_Task/`  | Day 2 tasks – loops, conditionals           |
-| `core-java/Day03_Task/`  | Day 3 tasks – arrays, string operations     |
-| `...`                    | Additional daily task folders               |
+| Folder/Path              | Description                                | Links                               |
+|--------------------------|--------------------------------------------|------------------------------------|
+| `core-java/Day01_Task/`  | Day 1 tasks – Java basics (syntax, variables) | [Day01 Tasks](core-java/Day01_Task/) |
+| `core-java/Day02_Task/`  | Day 2 tasks – loops, conditionals           | [Day02 Tasks](core-java/Day02_Task/) |
+| `core-java/Day03_Task/`  | Day 3 tasks – arrays, string operations     | [Day03 Tasks](core-java/Day03_Task/) |
+| `...`                    | Additional daily task folders               | -                                   |
 
 ---
 
 ### 🔹 oops
 
-| Folder/Path              | Description                                     |
-|--------------------------|-------------------------------------------------|
-| `oops/Day01_Task/`       | Day 1 – Classes, Objects                        |
-| `oops/Day02_Task/`       | Day 2 – Inheritance, Polymorphism              |
-| `oops/Day03_Task/`       | Day 3 – Abstraction, Encapsulation             |
-| `...`                    | Advanced OOP concepts and implementations       |
+| Folder/Path              | Description                                     | Links                               |
+|--------------------------|-------------------------------------------------|------------------------------------|
+| `oops/Day01_Task/`       | Day 1 – Classes, Objects                        | [Day01 Tasks](oops/Day01_Task/)     |
+| `oops/Day02_Task/`       | Day 2 – Inheritance, Polymorphism              | [Day02 Tasks](oops/Day02_Task/)     |
+| `oops/Day03_Task/`       | Day 3 – Abstraction, Encapsulation             | [Day03 Tasks](oops/Day03_Task/)     |
+| `...`                    | Advanced OOP concepts and implementations       | -                                   |
 
 ---
 
 ### 🔹 workshop
 
-| Folder/Path                | Description                                   |
-|----------------------------|-----------------------------------------------|
-| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             |
-| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            |
-| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            |
-| `...`                      | Further practice-based tasks                  |
+| Folder/Path                | Description                                   | Links                                  |
+|----------------------------|-----------------------------------------------|---------------------------------------|
+| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             | [Day01 Tasks](workshop/Day01_Task/)    |
+| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            | [Day02 Tasks](workshop/Day02_Task/)    |
+| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            | [Day03 Tasks](workshop/Day03_Task/)    |
+| `...`                      | Further practice-based tasks                  | -                                      |
 
 ---
 
