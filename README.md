@@ -86,6 +86,6 @@ Below are the folders for each branch/module with their descriptions:
 | Day-01 task - ClassAndObjects   | ([oops/Day01_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects))     |
 | Day-02 task - Constructors And Access Modifier  | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier))     |
 | Day-03 task - This, Static, Final And Instance Of Operator  | ([oops/Day03_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator))     |
-| Day-04 task - Object Modeling And Class Diagrams       | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling)) |
+| Day-04 task - Object Modeling And Class Diagrams       | ([oops/Day04_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling)) |
 
 ---
