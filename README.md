@@ -7,9 +7,10 @@ Welcome to the official repository of **Bridge Lab** – a learning and developm
 This repository consists of four main branches/modules:
 
 1. **main**
-2. **core-java**
-3. **workshop**
+2. **workshop**
+3. **core-java**
 4. **oops**
+
 
 Each branch contains a series of tasks organized by **day** to ensure consistent and structured learning.
 
@@ -26,11 +27,13 @@ This is the base branch of the project and may include:
 
 ### 2. `core-java`
 Focuses on core Java concepts including:
-- Data types
-- Control statements
+- Programing Elements
+- Control Flow
 - Arrays
+- Methods
 - Strings
-- Loops
+- Built in Functions
+- String Handling
 
 ## 📁 Folder Structure
 
@@ -40,31 +43,31 @@ Below are the folders for each branch/module with their descriptions:
 
 ### 🔹 main
 
-| Folder/Path                | Description                                      | Links                               |
-|----------------------------|--------------------------------------------------|------------------------------------|
-| `main/README.md`           | General documentation and project overview       | [README](main/README.md)            |
+| Description                                      | Links                               |
+|--------------------------------------------------|-------------------------------------|
+| General documentation and project overview       | [README]([main/README.md](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main))            |
 
 ---
 
 ### 🔹 core-java
 
-| Folder/Path              | Description                                | Links                               |
-|--------------------------|--------------------------------------------|------------------------------------|
-| `core-java/Day01_Task/`  | Day 1 tasks – Java basics (syntax, variables) | [Day01 Tasks](core-java/Day01_Task/) |
-| `core-java/Day02_Task/`  | Day 2 tasks – loops, conditionals           | [Day02 Tasks](core-java/Day02_Task/) |
-| `core-java/Day03_Task/`  | Day 3 tasks – arrays, string operations     | [Day03 Tasks](core-java/Day03_Task/) |
-| `...`                    | Additional daily task folders               | -                                   |
+| Description                                | Links                               |
+|--------------------------------------------|------------------------------------|
+| Day 1 tasks – Java basics (syntax, variables) | [Day01 Tasks](core-java/Day01_Task/) |
+| Day 2 tasks – loops, conditionals           | [Day02 Tasks](core-java/Day02_Task/) |
+| Day 3 tasks – arrays, string operations     | [Day03 Tasks](core-java/Day03_Task/) |
+| Additional daily task folders               | -                                   |
 
 ---
 
 ### 🔹 oops
 
-| Folder/Path              | Description                                     | Links                               |
-|--------------------------|-------------------------------------------------|------------------------------------|
-| `oops/Day01_Task/`       | Day 1 – Classes, Objects                        | [Day01 Tasks](oops/Day01_Task/)     |
-| `oops/Day02_Task/`       | Day 2 – Inheritance, Polymorphism              | [Day02 Tasks](oops/Day02_Task/)     |
-| `oops/Day03_Task/`       | Day 3 – Abstraction, Encapsulation             | [Day03 Tasks](oops/Day03_Task/)     |
-| `...`                    | Advanced OOP concepts and implementations       | -                                   |
+| Description                                     | Links                               |
+|-------------------------------------------------|------------------------------------|
+| Day 1 – Classes, Objects                        | [Day01 Tasks](oops/Day01_Task/)     |
+| Day 2 – Inheritance, Polymorphism              | [Day02 Tasks](oops/Day02_Task/)     |
+| Day 3 – Abstraction, Encapsulation             | [Day03 Tasks](oops/Day03_Task/)     |
+| Advanced OOP concepts and implementations       | -                                   |
 
 ---
 
