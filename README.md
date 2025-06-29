@@ -38,6 +38,17 @@ Below are the folders for each branch/module with their descriptions:
 
 ---
 
+### 🔹 main
+
+| Folder/Path                | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `main/README.md`           | General documentation and project overview       |
+| `main/setup-guide.md`      | Setup and environment configuration instructions |
+| `main/utilities/`          | Shared scripts, helper files, or assets          |
+
+---
+
+
 ### 🔹 core-java
 
 | Folder/Path              | Description                                |
@@ -46,17 +57,6 @@ Below are the folders for each branch/module with their descriptions:
 | `core-java/Day02_Task/`  | Day 2 tasks – loops, conditionals           |
 | `core-java/Day03_Task/`  | Day 3 tasks – arrays, string operations     |
 | `...`                    | Additional daily task folders               |
-
----
-
-### 🔹 workshop
-
-| Folder/Path                | Description                                   |
-|----------------------------|-----------------------------------------------|
-| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             |
-| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            |
-| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            |
-| `...`                      | Further practice-based tasks                  |
 
 ---
 
@@ -71,11 +71,20 @@ Below are the folders for each branch/module with their descriptions:
 
 ---
 
-### 🔹 main
+### 🔹 workshop
 
-| Folder/Path                | Description                                      |
-|----------------------------|--------------------------------------------------|
-| `main/README.md`           | General documentation and project overview       |
-| `main/setup-guide.md`      | Setup and environment configuration instructions |
-| `main/utilities/`          | Shared scripts, helper files, or assets          |
+| Folder/Path                | Description                                   |
+|----------------------------|-----------------------------------------------|
+| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             |
+| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            |
+| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            |
+| `...`                      | Further practice-based tasks                  |
+
+---
+
+
+
+
+
+
 
