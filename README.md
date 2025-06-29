@@ -33,3 +33,24 @@ Focuses on core Java concepts including:
 - Loops
 
 **Folder Structure:**
+Bridge-Lab/
+├── core-java/
+│ ├── Day01_Task/
+│ ├── Day02_Task/
+│ ├── Day03_Task/
+│ └── ...
+├── workshop/
+│ ├── Day01_Task/
+│ ├── Day02_Task/
+│ ├── Day03_Task/
+│ └── ...
+├── oops/
+│ ├── Day01_Task/
+│ ├── Day02_Task/
+│ ├── Day03_Task/
+│ └── ...
+├── main/
+│ ├── README.md
+│ ├── setup-guide.md
+│ └── utilities/
+└── README.md
