@@ -35,6 +35,14 @@ Focuses on core Java concepts including:
 - Built in Functions
 - String Handling
 
+### 3. `OOPs`
+Focuses on OOPs concepts including:
+- Class And Objects
+- Constructors And Access Modifier
+- This, Static, Final And Instance Of Operator
+- Object Modeling And Class Diagrams
+
+
 ## 📁 Folder Structure
 
 Below are the folders for each branch/module with their descriptions:
@@ -67,10 +75,10 @@ Below are the folders for each branch/module with their descriptions:
 
 | Description                                     | Links                               |
 |-------------------------------------------------|------------------------------------|
-| Day 1 – Classes, Objects                        | [Day01 Tasks](oops/Day01_Task/)     |
-| Day 2 – Inheritance, Polymorphism              | [Day02 Tasks](oops/Day02_Task/)     |
-| Day 3 – Abstraction, Encapsulation             | [Day03 Tasks](oops/Day03_Task/)     |
-| Advanced OOP concepts and implementations       | -                                   |
+| Day-01 task - ClassAndObjects   | ([oops/Day01_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects))     |
+| Day-02 task - Constructors And Access Modifier  | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier))     |
+| Day-03 task - This, Static, Final And Instance Of Operator  | ([oops/Day03_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator))     |
+| Day-04 task - Object Modeling And Class Diagrams       | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling)) |
 
 ---
 
