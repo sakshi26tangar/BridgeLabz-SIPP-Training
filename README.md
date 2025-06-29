@@ -57,6 +57,14 @@ Below are the folders for each branch/module with their descriptions:
 
 ---
 
+### 🔹 workshop
+
+| Description                                   | Links                                  |
+|-----------------------------------------------|---------------------------------------|
+| Workshop 01             | ([Workshop Link](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)))   |
+
+---
+
 ### 🔹 core-java
 
 | Description                                | Links                               |
@@ -81,20 +89,3 @@ Below are the folders for each branch/module with their descriptions:
 | Day-04 task - Object Modeling And Class Diagrams       | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling)) |
 
 ---
-
-### 🔹 workshop
-
-| Description                                   | Links                                  |
-|-----------------------------------------------|---------------------------------------|
-| Workshop 01             | ([Workshop Link](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25))   |
-
-
-
----
-
-
-
-
-
-
-
