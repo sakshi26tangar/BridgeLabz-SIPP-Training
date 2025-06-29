@@ -45,7 +45,8 @@ Below are the folders for each branch/module with their descriptions:
 
 | Description                                      | Links                               |
 |--------------------------------------------------|-------------------------------------|
-| General documentation and project overview       | [README]((https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main))            |
+| General documentation and project overview       | ([https://github.com](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main))
+            |
 
 ---
 
