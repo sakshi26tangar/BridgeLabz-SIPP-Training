@@ -32,25 +32,50 @@ Focuses on core Java concepts including:
 - Strings
 - Loops
 
-**Folder Structure:**
-Bridge-Lab/
-├── core-java/
-│ ├── Day01_Task/
-│ ├── Day02_Task/
-│ ├── Day03_Task/
-│ └── ...
-├── workshop/
-│ ├── Day01_Task/
-│ ├── Day02_Task/
-│ ├── Day03_Task/
-│ └── ...
-├── oops/
-│ ├── Day01_Task/
-│ ├── Day02_Task/
-│ ├── Day03_Task/
-│ └── ...
-├── main/
-│ ├── README.md
-│ ├── setup-guide.md
-│ └── utilities/
-└── README.md
+## 📁 Folder Structure
+
+Below are the folders for each branch/module with their descriptions:
+
+---
+
+### 🔹 core-java
+
+| Folder/Path              | Description                                |
+|--------------------------|--------------------------------------------|
+| `core-java/Day01_Task/`  | Day 1 tasks – Java basics (syntax, variables) |
+| `core-java/Day02_Task/`  | Day 2 tasks – loops, conditionals           |
+| `core-java/Day03_Task/`  | Day 3 tasks – arrays, string operations     |
+| `...`                    | Additional daily task folders               |
+
+---
+
+### 🔹 workshop
+
+| Folder/Path                | Description                                   |
+|----------------------------|-----------------------------------------------|
+| `workshop/Day01_Task/`     | Day 1 – hands-on coding exercises             |
+| `workshop/Day02_Task/`     | Day 2 – real-world problem-solving            |
+| `workshop/Day03_Task/`     | Day 3 – mini projects and practice            |
+| `...`                      | Further practice-based tasks                  |
+
+---
+
+### 🔹 oops
+
+| Folder/Path              | Description                                     |
+|--------------------------|-------------------------------------------------|
+| `oops/Day01_Task/`       | Day 1 – Classes, Objects                        |
+| `oops/Day02_Task/`       | Day 2 – Inheritance, Polymorphism              |
+| `oops/Day03_Task/`       | Day 3 – Abstraction, Encapsulation             |
+| `...`                    | Advanced OOP concepts and implementations       |
+
+---
+
+### 🔹 main
+
+| Folder/Path                | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `main/README.md`           | General documentation and project overview       |
+| `main/setup-guide.md`      | Setup and environment configuration instructions |
+| `main/utilities/`          | Shared scripts, helper files, or assets          |
+
