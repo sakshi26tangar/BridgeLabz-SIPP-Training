@@ -1,95 +1,64 @@
 import java.util.*;
 
-class Ride {
-    double distance;
-    int time;
-    String type; // "normal" or "premium"
+public class CabInvoiceGenerator {
+    static final double MIN_FARE = 5.0;
+    static final double COST_PER_KM = 10.0;
+    static final double COST_PER_MIN = 1.0;
 
-    Ride(double distance, int time, String type) {
-        this.distance = distance;
-        this.time = time;
-        this.type = type.toLowerCase();
-    }
-}
-
-class InvoiceSummary {
-    int totalRides;
-    double totalFare;
-    double averageFare;
-
-    InvoiceSummary(int totalRides, double totalFare) {
-        this.totalRides = totalRides;
-        this.totalFare = totalFare;
-        this.averageFare = totalFare / totalRides;
-    }
-
-    void printSummary() {
-        System.out.println("\n----- Invoice Summary -----");
-        System.out.println("Total Rides: " + totalRides);
-        System.out.println("Total Fare: " + totalFare);
-        System.out.printf("Average Fare: %.2f\n", averageFare);
-    }
-}
-
-class CabInvoiceGenerator {
-    HashMap<String, ArrayList<Ride>> userRides = new HashMap<>();
-
-    void addRides(String userId, Ride[] rides) {
-        userRides.put(userId, new ArrayList<>(Arrays.asList(rides)));
-    }
-
-    double calculateFare(Ride ride) {
-        double costPerKm = ride.type.equals("premium") ? 15 : 10;
-        int costPerMin = ride.type.equals("premium") ? 2 : 1;
-        double minFare = ride.type.equals("premium") ? 20 : 5;
-
-        double fare = ride.distance * costPerKm + ride.time * costPerMin;
-        return Math.max(fare, minFare);
-    }
-
-    InvoiceSummary getInvoice(String userId) {
-        ArrayList<Ride> rides = userRides.get(userId);
-        double totalFare = 0;
-        for (Ride ride : rides) {
-            totalFare += calculateFare(ride);
+    // Ride structure using simple array
+    static class Ride {
+        int distance, time;
+        Ride(int d, int t) {
+            distance = d;
+            time = t;
         }
-        return new InvoiceSummary(rides.size(), totalFare);
     }
-}
 
-public class CabInvoiceApp {
+    // Map to store user rides
+    static Map<String, List<Ride>> userRides = new HashMap<>();
+
+    // Fare calculation
+    static double calculateFare(int distance, int time) {
+        double fare = distance * COST_PER_KM + time * COST_PER_MIN;
+        return Math.max(fare, MIN_FARE);
+    }
+
+    // Generate invoice
+    static void generateInvoice(String userId) {
+        List<Ride> rides = userRides.getOrDefault(userId, new ArrayList<>());
+        double totalFare = 0;
+        for (Ride ride : rides)
+            totalFare += calculateFare(ride.distance, ride.time);
+
+        int totalRides = rides.size();
+        double avgFare = totalRides > 0 ? totalFare / totalRides : 0;
+
+        System.out.println("------ Invoice Summary ------");
+        System.out.println("Total Rides       : " + totalRides);
+        System.out.println("Total Fare        : " + totalFare);
+        System.out.println("Average Fare/Ride : " + avgFare);
+    }
+
+    //main code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        CabInvoiceGenerator generator = new CabInvoiceGenerator();
-
         System.out.print("Enter User ID: ");
         String userId = sc.nextLine();
 
         System.out.print("Enter number of rides: ");
         int n = sc.nextInt();
 
-        Ride[] rides = new Ride[n];
-
+        List<Ride> rides = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            System.out.println("\nEnter details for Ride " + (i + 1));
-            System.out.print("Distance (in km): ");
-            double distance = sc.nextDouble();
-
-            System.out.print("Time (in minutes): ");
-            int time = sc.nextInt();
-
-            sc.nextLine(); // clear buffer
-            System.out.print("Type (normal/premium): ");
-            String type = sc.nextLine();
-
-            rides[i] = new Ride(distance, time, type);
+            System.out.println("Enter distance and time for ride " + (i + 1) + ":");
+            int d = sc.nextInt(), t = sc.nextInt();
+            sc.nextLine(); // consume newline
+            System.out.print("Enter ride type (normal/premium): ");
+            sc.nextLine(); // read and ignore (not used)
+            rides.add(new Ride(d, t));
         }
 
-        generator.addRides(userId, rides);
-
-        InvoiceSummary summary = generator.getInvoice(userId);
-        summary.printSummary();
-
-        sc.close();
+        userRides.put(userId, rides);
+        generateInvoice(userId);
     }
 }
