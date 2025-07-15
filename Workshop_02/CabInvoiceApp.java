@@ -1,64 +1,133 @@
 import java.util.*;
 
-public class CabInvoiceGenerator {
-    static final double MIN_FARE = 5.0;
-    static final double COST_PER_KM = 10.0;
-    static final double COST_PER_MIN = 1.0;
+interface PricingStrategy {
+    double minFare();
+    double costPerKm();
+    double costPerMin();
 
-    // Ride structure using simple array
-    static class Ride {
-        int distance, time;
-        Ride(int d, int t) {
-            distance = d;
-            time = t;
+    default double calculateFare(int km, int minutes) {
+        double fare = km * costPerKm() + minutes * costPerMin();
+        return Math.max(fare, minFare());
+    }
+}
+
+
+final class NormalPricing implements PricingStrategy {
+    public double minFare()    { return 5.0; }
+    public double costPerKm()  { return 10.0; }
+    public double costPerMin() { return 1.0; }
+}
+
+
+final class PremiumPricing implements PricingStrategy {
+    public double minFare()    { return 20.0; }
+    public double costPerKm()  { return 15.0; }
+    public double costPerMin() { return 2.0; }
+}
+
+/** A single customer ride. */
+final class Ride {
+    private final int distanceKm;
+    private final int timeMin;
+    private final PricingStrategy pricing;
+
+    Ride(int distanceKm, int timeMin, PricingStrategy pricing) {
+        this.distanceKm = distanceKm;
+        this.timeMin    = timeMin;
+        this.pricing    = pricing;
+    }
+
+    double fare() {
+        return pricing.calculateFare(distanceKm, timeMin);
+    }
+}
+
+
+final class RideRepository {
+    private final Map<String, List<Ride>> data = new HashMap<>();
+
+    void addRides(String userId, List<Ride> rides) {
+        data.put(userId, new ArrayList<>(rides));
+    }
+
+    List<Ride> findByUser(String userId) {
+        return data.getOrDefault(userId, Collections.emptyList());
+    }
+}
+
+
+final class InvoiceService {
+
+    static class Summary {
+        final int totalRides;
+        final double totalFare;
+        final double averageFare;
+
+        Summary(int totalRides, double totalFare) {
+            this.totalRides  = totalRides;
+            this.totalFare   = totalFare;
+            this.averageFare = totalFare / totalRides;
         }
     }
 
-    // Map to store user rides
-    static Map<String, List<Ride>> userRides = new HashMap<>();
-
-    // Fare calculation
-    static double calculateFare(int distance, int time) {
-        double fare = distance * COST_PER_KM + time * COST_PER_MIN;
-        return Math.max(fare, MIN_FARE);
+    Summary generate(List<Ride> rides) {
+        if (rides.isEmpty()) throw new IllegalArgumentException("No rides found");
+        double total = rides.stream().mapToDouble(Ride::fare).sum();
+        return new Summary(rides.size(), total);
     }
+}
 
-    // Generate invoice
-    static void generateInvoice(String userId) {
-        List<Ride> rides = userRides.getOrDefault(userId, new ArrayList<>());
-        double totalFare = 0;
-        for (Ride ride : rides)
-            totalFare += calculateFare(ride.distance, ride.time);
 
-        int totalRides = rides.size();
-        double avgFare = totalRides > 0 ? totalFare / totalRides : 0;
+public class CabInvoiceApp {
 
-        System.out.println("------ Invoice Summary ------");
-        System.out.println("Total Rides       : " + totalRides);
-        System.out.println("Total Fare        : " + totalFare);
-        System.out.println("Average Fare/Ride : " + avgFare);
-    }
+    private final RideRepository repo = new RideRepository();
+    private final InvoiceService  invoicer = new InvoiceService();
 
-    //main code
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter User ID: ");
-        String userId = sc.nextLine();
+        new CabInvoiceApp().run();
+    }
 
-        System.out.print("Enter number of rides: ");
-        int n = sc.nextInt();
+    private void run() {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter User ID: ");
+            String userId = sc.nextLine().trim();
 
-        List<Ride> rides = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            System.out.println("Enter distance and time for ride " + (i + 1) + ":");
-            int d = sc.nextInt(), t = sc.nextInt();
-            sc.nextLine(); // consume newline
-            System.out.print("Enter ride type (normal/premium): ");
-            sc.nextLine(); // read and ignore (not used)
-            rides.add(new Ride(d, t));
+            System.out.print("Enter number of rides: ");
+            int n = Integer.parseInt(sc.nextLine().trim());
+
+            List<Ride> rides = new ArrayList<>();
+            for (int i = 1; i <= n; i++) {
+                System.out.println("--- Ride " + i + " ---");
+                System.out.print("Distance (km): ");
+                int km = Integer.parseInt(sc.nextLine().trim());
+
+                System.out.print("Time (min): ");
+                int min = Integer.parseInt(sc.nextLine().trim());
+
+                System.out.print("Premium ride? (yes/no): ");
+                boolean premium = sc.nextLine().trim().equalsIgnoreCase("yes");
+
+                PricingStrategy pricing = premium ? new PremiumPricing() : new NormalPricing();
+                rides.add(new Ride(km, min, pricing));
+            }
+
+            repo.addRides(userId, rides);
+            printInvoice(userId);
+        }
+    }
+
+    private void printInvoice(String userId) {
+        List<Ride> rides = repo.findByUser(userId);
+        if (rides.isEmpty()) {
+            System.out.println("No rides found for user.");
+            return;
         }
 
-        userRides.put(userId, rides);
-        generateInvoice(userId);
+        InvoiceService.Summary s = invoicer.generate(rides);
+
+        System.out.println("\n------ Invoice Summary ------");
+        System.out.println("Total Rides       : " + s.totalRides);
+        System.out.printf ("Total Fare        : %.2f%n", s.totalFare);
+        System.out.printf ("Average Fare/Ride : %.2f%n", s.averageFare);
     }
 }
