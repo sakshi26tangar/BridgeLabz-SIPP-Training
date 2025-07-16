@@ -17,7 +17,11 @@ Each branch contains a series of tasks organized by **day** to ensure consistent
 
 ---
 
-## 📌 Branch Details
+## 📁 Branch Descriptions
+
+This repository is organized into multiple branches, each focusing on a different area of Java development covered during the BridgeLabz SIPP Training.
+
+---
 
 ### 1. `main`
 This is the base branch of the project and may include:
@@ -57,33 +61,62 @@ Files:
 - **BrowserNavigation**: Simulates back and forward browser tab navigation (using Stack/Deque)
 - **SocialMediaNotification**: Implements a social media-style feed or notification system
 
+### 1. 🔹 `core-java`
 
-### 3. `core-java`
-Focuses on core Java concepts including:
-- Programing Elements
-- Control Flow
-- Arrays
-- Methods
-- Strings
-- Built in Functions
-- String Handling
+Focuses on **fundamental Java programming concepts**. This branch is ideal for building a strong base in Java syntax and logic.
 
-### 3. `OOPs`
-Focuses on OOPs concepts including:
-- Class And Objects
-- Constructors And Access Modifier
-- This, Static, Final And Instance Of Operator
-- Object Modeling And Class Diagrams
-- Inheritance
-- Encapsulation, Polymorphism, Interface and Abstract Classes
+#### Topics Covered:
+- Basic Programming Elements (data types, variables)
+- Control Flow (if-else, loops, switch-case)
+- Arrays (1D & 2D)
+- Methods (function creation and usage)
+- String operations and manipulations
+- Built-in Functions (`Math`, `Arrays`, etc.)
+- String Handling (immutability, concatenation, comparison)
 
-### 4. `DSA`
-Focuses on DSA concepts including:
-- LinkedList
-- Stack, Queue and Hashmap
-- Sorting Algorithms(Like Bubble, Insertion, Counting, Heap, Merge, Quick and Selection)
-- StringBuilder, StringBuffer, Linear and Binary Search
-- Algorithm's Runtime Analysis & Big-O Notation
+---
+
+### 2. 🔸 `OOPs`
+
+Dedicated to **Object-Oriented Programming** principles and real-world application modeling. The projects and examples simulate complex systems using OOP techniques.
+
+#### Topics Covered:
+- Class and Object Design
+- Constructors and Access Modifiers (private, public, etc.)
+- `this`, `static`, `final`, and `instanceof` operator usage
+- Object Modeling and Class Diagrams (UML concepts)
+- Inheritance and Method Overriding
+- Encapsulation and Accessors
+- Polymorphism (compile-time and run-time)
+- Interface and Abstract Class usage
+
+---
+
+### 3. 🔹 `DSA`
+
+This branch focuses on **Data Structures and Algorithms**, optimized Java code, and performance understanding.
+
+#### Topics Covered:
+- Linked Lists (singly and doubly linked)
+- Stack and Queue implementations
+- HashMap operations and applications
+- Sorting Algorithms:
+  - Bubble Sort
+  - Insertion Sort
+  - Selection Sort
+  - Counting Sort
+  - Merge Sort
+  - Quick Sort
+  - Heap Sort
+- StringBuilder and StringBuffer performance comparisons
+- Linear Search and Binary Search techniques
+- Algorithm Efficiency (Big-O Notation & Runtime Analysis)
+
+---
+
+Each branch includes real-world problems, code snippets, and workshop-based solutions to reinforce learning through hands-on practice.
+
+
 
 ## 📁 Folder Structure
 
