@@ -176,7 +176,7 @@ Below are the folders for each branch/module with their descriptions:
 | Day 03 – Use of `this`, `static`, `final`, and `instanceof`    | [Day-03_Day-03_This-Static-Final-InstanceOfOperator](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator) |
 | Day 04 – UML-based object modeling and class diagram examples   | [Object modeling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling) |
 | Day 05 – Demonstration of single and multilevel inheritance     | [Day-05_Inheritance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-05_Inheritance) |
-| Day 06 – Encapsulation, Polymorphism, and Abstraction Concepts | [Day-06_Encapsulation-Polymorphism-Abstract](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation-Polymorphism-Abstract) |
+| Day 06 – Encapsulation, Polymorphism, and Abstraction Concepts | [Day-06_Encapsulation-Polymorphism-Abstract](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation-Polymorphism-Interface-AbstractClasses) |
 
 ---
 
