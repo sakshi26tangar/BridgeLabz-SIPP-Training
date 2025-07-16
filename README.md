@@ -136,41 +136,61 @@ Below are the folders for each branch/module with their descriptions:
 
 ### 🔹 main
 
-| Description                                      | Links                               |
-|--------------------------------------------------|-------------------------------------|
-| General documentation and project overview       | ([README.md](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main))|
+| Description                                | Link                               |
+|--------------------------------------------|------------------------------------|
+| Repository home with overview and guidelines | [main](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main) |
 
 ---
 
 ### 🔹 workshop
 
-| Description                                   | Links                                  |
-|-----------------------------------------------|---------------------------------------|
-| Workshop 01             | ([Workshop Link](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)))   |
+| Description                                                | Link                                                                               |
+|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Basic Java problem-solving activities (28-06-25)           | [Workshop_01(28-06-25)](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)) |
+| Exercises on OOP design and interface usage                | [Workshop_02](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_02) |
+| E-Wallet application using OOP concepts and interface      | [Workshop_03_EWalletApp](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_03_EWalletApp) |
+| Real-world problem statements like browser & feed systems  | [Workshop_04_ProbStatements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_04_ProbStatements) |
 
 ---
 
 ### 🔹 core-java
 
-| Description                                | Links                               |
-|--------------------------------------------|------------------------------------|
-|Day-01 task - Programming Elements | ([core-java/Day01_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-01_ProgrammingElements)) |
-| Day-02 task - Control Flow           | ([core-java/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-02_ControlFlow)) |
-| Day-03 task – arrays      | ([core-java/Day03_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-03_Arrays)) |
-|Day-04 task -  Methods | ([core-java/Day04_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-04_Methods)) |
-| Day-05 task - Strings         | ([core-java/Day05_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-05_Strings)) |
-| Day-06 task – EXTRAS-built_in_functions      | ([core-java/Day06_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-built_in_functions)) |
-|  Day-07 task – EXTRAS-java_string_handling      | ([core-java/Day07_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-java_string_handling)) |
+| Description                                          | Link                                                                             |
+|------------------------------------------------------|----------------------------------------------------------------------------------|
+| Day 01 – Introduction to Java programming elements   | [Day-01_ProgrammingElements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-01_ProgrammingElements) |
+| Day 02 – Conditional structures and control flow     | [Day-02_ControlFlow](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-02_ControlFlow) |
+| Day 03 – One-dimensional and multi-dimensional arrays | [Day-03_Arrays](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-03_Arrays) |
+| Day 04 – Method declaration, overloading, and reuse   | [Day-04_Methods](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-04_Methods) |
+| Day 05 – String handling and basic operations         | [Day-05_Strings](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-05_Strings) |
+| Extras – Built-in utility functions in Java          | [EXTRAS-built_in_functions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-built_in_functions) |
+| Extras – Advanced Java string manipulation techniques | [EXTRAS-java_string_handling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-java_string_handling) |
 
 ---
 
-### 🔹 oops
+### 🔹 OOPs
 
-| Description                                     | Links                               |
-|-------------------------------------------------|------------------------------------|
-| Day-01 task - ClassAndObjects   | ([oops/Day01_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects))     |
-| Day-02 task - Constructors And Access Modifier  | ([oops/Day02_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier))     |
-| Day-03 task - This, Static, Final And Instance Of Operator  | ([oops/Day03_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator))     |
-| Day-04 task - Object Modeling And Class Diagrams       | ([oops/Day04_Task](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling)) |
+| Description                                                    | Link                                                                                   |
+|----------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Day 01 – Basics of classes, objects, and instantiation         | [Day-01_ClassAndObjects](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects) |
+| Day 02 – Constructors and access modifiers explained           | [Day-02_ConstructorsAndAccessModifier](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier) |
+| Day 03 – Use of `this`, `static`, `final`, and `instanceof`    | [Day-03_Day-03_This-Static-Final-InstanceOfOperator](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator) |
+| Day 04 – UML-based object modeling and class diagram examples   | [Object modeling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling) |
+| Day 05 – Demonstration of single and multilevel inheritance     | [Day-05_Inheritance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-05_Inheritance) |
+| Day 06 – Encapsulation through accessors and mutators (getters/setters) | [Day-06_Encapsulation](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation) |
+| Day 07 – Polymorphism: method overloading and overriding       | [Day-07_Polymorphism](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-07_Polymorphism) |
+| Day 08 – Abstract classes and interfaces in OOP design         | [Day-08_AbstractAndInterface](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-08_AbstractAndInterface) |
 
 ---
+
+### 🔹 DSA
+
+| Description                                                    | Link                                                                                     |
+|----------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Day 01 – Linked list operations (singly/doubly)                | [Day-01_LinkedList](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-01_LinkedList) |
+| Day 02 – Stack, queue, and hashmap implementations             | [Day-02_Stack-Queue-HashMap](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-02_Stack-Queue-HashMap) |
+| Day 03 – Sorting algorithms (bubble, selection, merge, etc.)   | [Day-03_Sorting](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_Sorting) |
+| Day 04 – Search algorithms, StringBuilder & StringBuffer       | [Day-04_StringBuilder-StringBuffer-Search](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04_StringBuilder-StringBuffer-Search) |
+| Day 05 – Runtime analysis and Big-O complexity understanding   | [Day-05_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-05_RuntimeAnalysis) |
+
+---
+
