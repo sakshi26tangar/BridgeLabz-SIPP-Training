@@ -30,7 +30,7 @@ This is the base branch of the project and may include:
 ### 2. `Workshop`
 This repository contains Java projects and problem statements. Each workshop focuses on object-oriented programming (OOP), system design, and real-world Java applications.
 
-# Workshop 01 — Basic Java Simulations (28-06-25)
+Workshop 01 — Basic Java Simulations (28-06-25)
 Files:
 - **CoffeeCounterChronicles**: Models a coffee shop counter system.
 - **ElectionBoothManager**: Simulates a voter registration and voting system.
