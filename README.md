@@ -111,67 +111,73 @@ Focuses on **Data Structures and Algorithms** to enhance coding performance and 
 
 ## 📦 Folder Structure
 
-Below are the folders available in each branch/module:
+### 1. `main`
+
+| Section | Description                               | Link                               |
+|---------|--------------------------------------------|------------------------------------|
+| —       | Repository overview and setup instructions | [main](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main) |
 
 ---
 
-### 🔹 main
+### 2. `workshop`
 
-| Description                        | Link                               |
-|------------------------------------|------------------------------------|
-| Repository overview and guidelines | [main](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/main) |
-
----
-
-### 🔸 workshop
-
-| Description                                        | Link                                                                               |
-|----------------------------------------------------|------------------------------------------------------------------------------------|
-| Basic Java problem-solving activities (28-06-25)   | [Workshop_01(28-06-25)](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)) |
-| Exercises on OOP and interfaces                    | [Workshop_02](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_02) |
-| E-Wallet application using OOP concepts            | [Workshop_03_EWalletApp](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_03_EWalletApp) |
-| Real-world problems: browser, feed simulations     | [Workshop_04_ProbStatements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_04_ProbStatements) |
+| Workshop     | Description                                                          | Link                                                                               |
+|--------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Workshop 01  | Basic Java simulations: coffee shop, voting, and parking lot system  | [Workshop_01(28-06-25)](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)) |
+| Workshop 02  | OOP-focused interface-based cab fare calculator and class demo       | [Workshop_02](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_02) |
+| Workshop 03  | E-Wallet app with personal/business wallet, interface, transactions  | [Workshop_03_EWalletApp](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_03_EWalletApp) |
+| Workshop 04  | Real-world problems: browser nav and social media notification feed  | [Workshop_04_ProbStatements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_04_ProbStatements) |
 
 ---
 
-### 🔹 core-java
+### 3. `core-java`
 
-| Description                                            | Link                                                                             |
-|--------------------------------------------------------|----------------------------------------------------------------------------------|
-| Java programming basics and syntax fundamentals        | [Day-01_ProgrammingElements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-01_ProgrammingElements) |
-| Conditional logic with if-else, loops, switch          | [Day-02_ControlFlow](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-02_ControlFlow) |
-| Arrays: declaration, usage, multidimensional logic     | [Day-03_Arrays](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-03_Arrays) |
-| Method creation, reuse, overloading                    | [Day-04_Methods](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-04_Methods) |
-| String operations and handling basics                  | [Day-05_Strings](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-05_Strings) |
-| Java built-in utility functions (`Math`, `Arrays`)     | [EXTRAS-built_in_functions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-built_in_functions) |
-| Advanced string handling (comparison, immutability)    | [EXTRAS-java_string_handling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-java_string_handling) |
-
----
-
-### 🔸 OOPs
-
-| Description                                                | Link                                                                               |
-|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Day 01 – Classes, objects, real-world abstraction          | [Day-01_ClassAndObjects](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects) |
-| Day 02 – Constructors and access modifiers                 | [Day-02_ConstructorsAndAccessModifier](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier) |
-| Day 03 – Static methods, final keyword, and `this` usage   | [Day-03_Day-03_This-Static-Final-InstanceOfOperator](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator) |
-| Day 04 – UML diagrams and class relationships              | [Object modeling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling) |
-| Day 05 – Inheritance (single & multilevel) demonstration   | [Day-05_Inheritance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-05_Inheritance) |
-| Day 06 – Encapsulation, Polymorphism, Abstraction          | [Day-06_Encapsulation-Polymorphism-Abstract](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation-Polymorphism-Interface-AbstractClasses) |
+| Day     | Description                                                        | Link                                                                             |
+|---------|--------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Day 01  | Introduction to Java programming elements (variables, data types) | [Day-01_ProgrammingElements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-01_ProgrammingElements) |
+| Day 02  | Conditional structures and control flow (if, else, loops, switch) | [Day-02_ControlFlow](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-02_ControlFlow) |
+| Day 03  | Arrays: declaration, 1D/2D access, and iteration techniques       | [Day-03_Arrays](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-03_Arrays) |
+| Day 04  | Method creation, overloading, and return types                    | [Day-04_Methods](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-04_Methods) |
+| Day 05  | String operations: concatenation, comparison, immutability        | [Day-05_Strings](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/Day-05_Strings) |
+| Extras  | Built-in utility functions in Java (`Math`, `Arrays`, etc.)       | [EXTRAS-built_in_functions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-built_in_functions) |
+| Extras  | Advanced Java string handling techniques                          | [EXTRAS-java_string_handling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/core-java/EXTRAS-java_string_handling) |
 
 ---
 
-### 🔹 DSA
+### 4. `OOPs`
 
-| Description                                                | Link                                                                             |
-|------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Day 01 – Linked Lists (single, double, circular)           | [Day-01_LinkedList](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-01_LinkedList) |
-| Day 02 – Stack, queue, and hashmap implementations         | [Day-02_Stack-Queue-HashMap](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-02_Stack-Queue-Hash) |
-| Day 03 – Sorting techniques: bubble, merge, quick, etc.    | [Day-03_SortingAlgorithms](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_SortingAlgorithms) |
-| Day 04-05 – Search, StringBuilder vs StringBuffer          | [Day-04-05_StringBuilder-StringBuffer-SearchingAlgo's](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04-05_LinearAndBinarySearch) |
-| Day 06 – Big-O Notation & Runtime Analysis of algorithms   | [Day-05_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-06_Algorithm's_Runtime_Analysis_%26_Big-O_Notation) |
+| Day     | Description                                                        | Link                                                                               |
+|---------|--------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Day 01  | Classes, objects, and instantiation basics                         | [Day-01_ClassAndObjects](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-01_ClassAndObjects) |
+| Day 02  | Constructors, access modifiers, and object construction            | [Day-02_ConstructorsAndAccessModifier](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-02_ConstructorsAndAccessModifier) |
+| Day 03  | Use of `this`, `static`, `final`, and `instanceof`                 | [Day-03_This-Static-Final-InstanceOfOperator](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator) |
+| Day 04  | UML diagrams and object modeling                                   | [ObjectModeling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling) |
+| Day 05  | Inheritance: single, multilevel, and method overriding             | [Day-05_Inheritance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-05_Inheritance) |
+| Day 06  | Encapsulation, Polymorphism, Abstract Classes & Interfaces         | [Day-06_Encapsulation-Polymorphism-Abstract](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation-Polymorphism-Interface-AbstractClasses) |
 
 ---
+
+### 5. `DSA`
+
+| Day     | Description                                                       | Link                                                                               |
+|---------|-------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Day 01  | Linked Lists: singly, doubly, circular implementation             | [Day-01_LinkedList](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-01_LinkedList) |
+| Day 02  | Stack and Queue with HashMap operations                           | [Day-02_Stack-Queue-HashMap](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-02_Stack-Queue-Hash) |
+| Day 03  | Sorting algorithms: Bubble, Selection, Merge, Quick, etc.         | [Day-03_SortingAlgorithms](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_SortingAlgorithms) |
+| Day 04-05 | Linear/Binary Search + StringBuilder vs StringBuffer           | [Day-04-05_SearchingAndStringPerformance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04-05_LinearAndBinarySearch) |
+| Day 06  | Runtime analysis and Big-O complexity                             | [Day-06_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-06_Algorithm's_Runtime_Analysis_%26_Big-O_Notation) |
+
+---
+
+## 🧠 Learning Outcome
+
+Each branch in this repository supports:
+- Strong theoretical understanding
+- Real-world coding practice
+- OOP mastery with hands-on examples
+- Efficiency through DSA knowledge
+- Industry-ready project experience
+
 
 ## 🧠 Learning Outcomes
 
