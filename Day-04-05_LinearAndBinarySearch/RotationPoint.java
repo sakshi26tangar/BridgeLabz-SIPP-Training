@@ -24,7 +24,7 @@ public class RotationPoint {
         int[] arr = {15, 18, 2, 3, 6, 12};  // Rotated sorted array
         int index = findRotationPoint(arr);
 
-        // System.out.println("The smallest element is at index: " + index);
-        // System.out.println("The smallest element is: " + arr[index]);
+        System.out.println("The smallest element is at index: " + index);
+        System.out.println("The smallest element is: " + arr[index]);
     }
 }
