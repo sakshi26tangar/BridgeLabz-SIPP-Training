@@ -185,11 +185,11 @@ Below are the folders for each branch/module with their descriptions:
 
 | Description                                                    | Link                                                                                     |
 |----------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Day 01 – Linked list operations (singly/doubly)                | [Day-01_LinkedList](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-01_LinkedList) |
-| Day 02 – Stack, queue, and hashmap implementations             | [Day-02_Stack-Queue-HashMap](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-02_Stack-Queue-HashMap) |
-| Day 03 – Sorting algorithms (bubble, selection, merge, etc.)   | [Day-03_Sorting](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_Sorting) |
-| Day 04 – Search algorithms, StringBuilder & StringBuffer       | [Day-04_StringBuilder-StringBuffer-Search](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04_StringBuilder-StringBuffer-Search) |
-| Day 05 – Runtime analysis and Big-O complexity understanding   | [Day-05_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-05_RuntimeAnalysis) |
+| Day 01 – Linked list operations (singly/doubly/circular)                | [Day-01_LinkedList](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-01_LinkedList) |
+| Day 02 – Stack, queue, and hashmap implementations             | [Day-02_Stack-Queue-HashMap](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-02_Stack-Queue-Hash) |
+| Day 03 – Sorting algorithms (bubble, selection, merge, etc.)   | [Day-03_SortingAlgorithms](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_SortingAlgorithms) |
+| Day 04-05 – Linear and Binary Search algorithms, StringBuilder & StringBuffer       | [Day-04-05_StringBuilder-StringBuffer-SearchingAlgo's](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04-05_LinearAndBinarySearch) |
+| Day 06 – Runtime analysis and Big-O complexity understanding   | [Day-05_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-06_Algorithm's_Runtime_Analysis_%26_Big-O_Notation) |
 
 ---
 
