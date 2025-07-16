@@ -10,6 +10,7 @@ This repository consists of four main branches/modules:
 2. **workshop**
 3. **core-java**
 4. **oops**
+5. **DSA**
 
 
 Each branch contains a series of tasks organized by **day** to ensure consistent and structured learning.
@@ -20,10 +21,49 @@ Each branch contains a series of tasks organized by **day** to ensure consistent
 
 ### 1. `main`
 This is the base branch of the project and may include:
+- Readme.md
 - General resources
 - Guidelines
 - Setup instructions
-- Common utilities
+
+### 1. `Workshop`
+This repository contains Java projects and problem statements. Each workshop focuses on object-oriented programming (OOP), system design, and real-world Java applications.
+
+## 📅 Workshop 01 — Basic Java Simulations (28-06-25)
+
+## ✅ Files:
+- **CoffeeCounterChronicles**: Models a coffee shop counter system.
+- **ElectionBoothManager**: Simulates a voter registration and voting system.
+- **ParkingLotGateSystem**: Implements a parking lot entry/exit logic system.
+
+
+
+## 📅 Workshop 02 — OOP & Interface-Based Design
+
+## ✅ Files:
+This session explored the application of **Interfaces** and **Object-Oriented Programming** through two key programs.
+
+- **CabInvoiceApp**: Implements a cab fare calculator for normal and premium rides with:
+  - Fare per kilometer
+  - Fare per minute
+  - Minimum fare logic
+- **InterfaceInThreeClass**: Demonstrates use of interfaces across three separate class implementations.
+
+## 📅 Workshop 03 — E-Wallet Application
+
+## 📝 Description:
+Built a fully functional **E-Wallet system** that models wallet-based digital transactions.
+- Supports loading and transferring money
+- Separate classes for personal and business wallets
+- Implements `Transferable` interface
+- Logs transactions using a `Transaction` class
+
+
+## 📅 Workshop 04 — Real-World OOP Applications
+
+### ✅ Files:
+- **BrowserNavigation**: Simulates back and forward browser tab navigation (using Stack/Deque)
+- **SocialMediaNotification**: Implements a social media-style feed or notification system
 
 ### 2. `core-java`
 Focuses on core Java concepts including:
@@ -41,7 +81,16 @@ Focuses on OOPs concepts including:
 - Constructors And Access Modifier
 - This, Static, Final And Instance Of Operator
 - Object Modeling And Class Diagrams
+- Inheritance
+- Encapsulation, Polymorphism, Interface and Abstract Classes
 
+### 4. `DSA`
+Focuses on DSA concepts including:
+- LinkedList
+- Stack, Queue and Hashmap
+- Sorting Algorithms(Like Bubble, Insertion, Counting, Heap, Merge, Quick and Selection)
+- StringBuilder, StringBuffer, Linear and Binary Search
+- Algorithm's Runtime Analysis & Big-O Notation
 
 ## 📁 Folder Structure
 
