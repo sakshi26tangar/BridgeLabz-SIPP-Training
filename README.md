@@ -1,10 +1,10 @@
-# ☕ Bridge Lab
+# ☕ BridgeLabz
 
-Welcome to the official repository of **Bridge Lab** – a learning and development space focused on building strong programming fundamentals across various technical domains.
+Welcome to the official repository of **BridgeLabz** – a learning and development space focused on building strong programming fundamentals across various technical domains.
 
 ---
 
-## 🚀 BridgeLabz SIPP Training — Java Project Repository
+## 🚀 BridgeLabz SIPP Training
 
 This repository contains Java projects and problem statements developed during the **BridgeLabz Summer Internship Program (SIPP)**. It is organized into multiple branches, each focusing on a specific area such as Core Java, Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), and hands-on Workshops.
 
