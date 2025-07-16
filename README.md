@@ -169,16 +169,6 @@ Focuses on **Data Structures and Algorithms** to enhance coding performance and 
 
 ---
 
-## 🧠 Learning Outcome
-
-Each branch in this repository supports:
-- Strong theoretical understanding
-- Real-world coding practice
-- OOP mastery with hands-on examples
-- Efficiency through DSA knowledge
-- Industry-ready project experience
-
-
 ## 🧠 Learning Outcomes
 
 Each branch supports:
