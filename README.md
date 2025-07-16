@@ -30,13 +30,13 @@ This is the base branch of the project and may include:
 ### 2. `Workshop`
 This repository contains Java projects and problem statements. Each workshop focuses on object-oriented programming (OOP), system design, and real-world Java applications.
 
-Workshop 01 — Basic Java Simulations (28-06-25)
+-Workshop 01 — Basic Java Simulations (28-06-25)
 Files:
 - **CoffeeCounterChronicles**: Models a coffee shop counter system.
 - **ElectionBoothManager**: Simulates a voter registration and voting system.
 - **ParkingLotGateSystem**: Implements a parking lot entry/exit logic system.
 
-Workshop 02 — OOP & Interface-Based Design
+-Workshop 02 — OOP & Interface-Based Design
 Files:
 - **CabInvoiceApp**: Implements a cab fare calculator for normal and premium rides with:
   - Fare per kilometer
@@ -44,7 +44,7 @@ Files:
   - Minimum fare logic
 - **InterfaceInThreeClass**: Demonstrates use of interfaces across three separate class implementations.
 
-Workshop 03 — E-Wallet Application
+-Workshop 03 — E-Wallet Application
 Description:
 Built a fully functional **E-Wallet system** that models wallet-based digital transactions.
 - Supports loading and transferring money
@@ -52,7 +52,7 @@ Built a fully functional **E-Wallet system** that models wallet-based digital tr
 - Implements `Transferable` interface
 - Logs transactions using a `Transaction` class
 
-Workshop 04 — Real-World OOP Applications
+-Workshop 04 — Real-World OOP Applications
 Files:
 - **BrowserNavigation**: Simulates back and forward browser tab navigation (using Stack/Deque)
 - **SocialMediaNotification**: Implements a social media-style feed or notification system
