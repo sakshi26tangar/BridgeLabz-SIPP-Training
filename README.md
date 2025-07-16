@@ -26,46 +26,39 @@ This is the base branch of the project and may include:
 - Guidelines
 - Setup instructions
 
-### 1. `Workshop`
+
+### 2. `Workshop`
 This repository contains Java projects and problem statements. Each workshop focuses on object-oriented programming (OOP), system design, and real-world Java applications.
 
-## 📅 Workshop 01 — Basic Java Simulations (28-06-25)
-
-## ✅ Files:
+# 📅 Workshop 01 — Basic Java Simulations (28-06-25)
+✅ Files:
 - **CoffeeCounterChronicles**: Models a coffee shop counter system.
 - **ElectionBoothManager**: Simulates a voter registration and voting system.
 - **ParkingLotGateSystem**: Implements a parking lot entry/exit logic system.
 
-
-
-## 📅 Workshop 02 — OOP & Interface-Based Design
-
-## ✅ Files:
-This session explored the application of **Interfaces** and **Object-Oriented Programming** through two key programs.
-
+# 📅 Workshop 02 — OOP & Interface-Based Design
+✅ Files:
 - **CabInvoiceApp**: Implements a cab fare calculator for normal and premium rides with:
   - Fare per kilometer
   - Fare per minute
   - Minimum fare logic
 - **InterfaceInThreeClass**: Demonstrates use of interfaces across three separate class implementations.
 
-## 📅 Workshop 03 — E-Wallet Application
-
-## 📝 Description:
+# 📅 Workshop 03 — E-Wallet Application
+📝 Description:
 Built a fully functional **E-Wallet system** that models wallet-based digital transactions.
 - Supports loading and transferring money
 - Separate classes for personal and business wallets
 - Implements `Transferable` interface
 - Logs transactions using a `Transaction` class
 
-
-## 📅 Workshop 04 — Real-World OOP Applications
-
-### ✅ Files:
+# 📅 Workshop 04 — Real-World OOP Applications
+# ✅ Files:
 - **BrowserNavigation**: Simulates back and forward browser tab navigation (using Stack/Deque)
 - **SocialMediaNotification**: Implements a social media-style feed or notification system
 
-### 2. `core-java`
+
+### 3. `core-java`
 Focuses on core Java concepts including:
 - Programing Elements
 - Control Flow
