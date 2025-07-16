@@ -17,6 +17,12 @@ Each branch contains a series of tasks organized by **day** to ensure consistent
 
 ---
 
+# 🚀 BridgeLabz SIPP Training — Java Project Repository
+
+This repository contains various Java projects and problem statements developed during the **BridgeLabz Summer Internship Program (SIPP)**. It is organized into multiple branches, each focusing on a specific area such as Core Java, Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), and hands-on Workshops.
+
+---
+
 ## 📁 Branch Descriptions
 
 This repository is organized into multiple branches, each focusing on a different area of Java development covered during the BridgeLabz SIPP Training.
@@ -24,99 +30,103 @@ This repository is organized into multiple branches, each focusing on a differen
 ---
 
 ### 1. `main`
-This is the base branch of the project and may include:
-- Readme.md
-- General resources
-- Guidelines
-- Setup instructions
 
-
-### 2. `Workshop`
-This repository contains Java projects and problem statements. Each workshop focuses on object-oriented programming (OOP), system design, and real-world Java applications.
-
-Workshop 01 — Basic Java Simulations (28-06-25)
-Files:
-- **CoffeeCounterChronicles**: Models a coffee shop counter system.
-- **ElectionBoothManager**: Simulates a voter registration and voting system.
-- **ParkingLotGateSystem**: Implements a parking lot entry/exit logic system.
-
-Workshop 02 — OOP & Interface-Based Design
-Files:
-- **CabInvoiceApp**: Implements a cab fare calculator for normal and premium rides with:
-  - Fare per kilometer
-  - Fare per minute
-  - Minimum fare logic
-- **InterfaceInThreeClass**: Demonstrates use of interfaces across three separate class implementations.
-
-Workshop 03 — E-Wallet Application
-Description:
-Built a fully functional **E-Wallet system** that models wallet-based digital transactions.
-- Supports loading and transferring money
-- Separate classes for personal and business wallets
-- Implements `Transferable` interface
-- Logs transactions using a `Transaction` class
-
-Workshop 04 — Real-World OOP Applications
-Files:
-- **BrowserNavigation**: Simulates back and forward browser tab navigation (using Stack/Deque)
-- **SocialMediaNotification**: Implements a social media-style feed or notification system
-
-### 1. 🔹 `core-java`
-
-Focuses on **fundamental Java programming concepts**. This branch is ideal for building a strong base in Java syntax and logic.
-
-#### Topics Covered:
-- Basic Programming Elements (data types, variables)
-- Control Flow (if-else, loops, switch-case)
-- Arrays (1D & 2D)
-- Methods (function creation and usage)
-- String operations and manipulations
-- Built-in Functions (`Math`, `Arrays`, etc.)
-- String Handling (immutability, concatenation, comparison)
+This is the **base branch** of the repository. It may include:
+- Project-level `README.md`
+- General resources and guidelines
+- Setup and usage instructions
 
 ---
 
-### 2. 🔸 `OOPs`
+### 2. `Workshop`
 
-Dedicated to **Object-Oriented Programming** principles and real-world application modeling. The projects and examples simulate complex systems using OOP techniques.
+This branch contains **Java projects based on real-world problem statements**. Each workshop is hands-on and focuses on OOP, design patterns, and practical application of Java skills.
+
+#### ✅ Workshop 01 — Basic Java Simulations (28-06-25)
+**Files:**
+- `CoffeeCounterChronicles.java`: Models a coffee shop counter system.
+- `ElectionBoothManager.java`: Simulates a voter registration and voting system.
+- `ParkingLotGateSystem.java`: Implements a parking lot entry/exit logic system.
+
+#### ✅ Workshop 02 — OOP & Interface-Based Design
+**Files:**
+- `CabInvoiceApp.java`: Cab fare calculator for normal and premium rides with cost logic.
+- `InterfaceInThreeClass.java`: Demonstrates interface implementation across multiple classes.
+
+#### ✅ Workshop 03 — E-Wallet Application
+Built a fully functional **E-Wallet system** that models wallet-based digital transactions.
+
+**Key Features:**
+- Load and transfer money between wallets
+- Personal and business wallet types
+- Implements `Transferable` interface
+- Logs all transactions
+
+#### ✅ Workshop 04 — Real-World OOP Applications
+**Files:**
+- `BrowserNavigation.java`: Simulates back/forward browser tab navigation using stack/queue.
+- `SocialMediaNotification.java`: Implements a feed-style notification system.
+
+---
+
+### 3. 🔹 `core-java`
+
+This branch focuses on **fundamental Java programming concepts**. It helps build a strong base in Java syntax, logic, and structure.
+
+#### Topics Covered:
+- Basic Programming Elements (variables, data types)
+- Control Flow (if-else, loops, switch-case)
+- Arrays (1D & 2D)
+- Methods (declaration, invocation, return types)
+- String operations and manipulations
+- Built-in Functions (`Math`, `Arrays`, etc.)
+- String Handling (immutability, comparison, concatenation)
+
+---
+
+### 4. 🔸 `OOPs`
+
+Dedicated to **Object-Oriented Programming** principles and real-world object modeling.
 
 #### Topics Covered:
 - Class and Object Design
-- Constructors and Access Modifiers (private, public, etc.)
-- `this`, `static`, `final`, and `instanceof` operator usage
-- Object Modeling and Class Diagrams (UML concepts)
-- Inheritance and Method Overriding
-- Encapsulation and Accessors
-- Polymorphism (compile-time and run-time)
-- Interface and Abstract Class usage
+- Constructors and Access Modifiers (`private`, `public`)
+- `this`, `static`, `final`, and `instanceof` operators
+- Object Modeling & Class Diagrams (UML basics)
+- Inheritance (single and multilevel)
+- Encapsulation using getters/setters
+- Polymorphism (method overloading and overriding)
+- Abstract Classes and Interfaces
 
 ---
 
-### 3. 🔹 `DSA`
+### 5. 🔹 `DSA`
 
-This branch focuses on **Data Structures and Algorithms**, optimized Java code, and performance understanding.
+This branch focuses on **Data Structures and Algorithms (DSA)** to improve coding performance and problem-solving skills.
 
 #### Topics Covered:
-- Linked Lists (singly and doubly linked)
-- Stack and Queue implementations
-- HashMap operations and applications
+- Linked Lists (singly and doubly)
+- Stack and Queue Implementations
+- HashMap usage and custom logic
 - Sorting Algorithms:
-  - Bubble Sort
-  - Insertion Sort
-  - Selection Sort
-  - Counting Sort
-  - Merge Sort
-  - Quick Sort
-  - Heap Sort
-- StringBuilder and StringBuffer performance comparisons
-- Linear Search and Binary Search techniques
-- Algorithm Efficiency (Big-O Notation & Runtime Analysis)
+  - Bubble, Insertion, Selection
+  - Merge, Quick, Heap, Counting Sort
+- StringBuilder vs StringBuffer performance
+- Linear and Binary Search algorithms
+- Time and Space Complexity (Big-O Analysis)
 
 ---
 
-Each branch includes real-world problems, code snippets, and workshop-based solutions to reinforce learning through hands-on practice.
+## 🧠 Learning Outcome
 
+Each branch in this repository supports:
+- Strong theoretical understanding
+- Real-world coding practice
+- OOP mastery with hands-on examples
+- Efficiency through DSA knowledge
+- Industry-ready project experience
 
+---
 
 ## 📁 Folder Structure
 
