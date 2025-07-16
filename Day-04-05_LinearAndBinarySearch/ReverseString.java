@@ -2,20 +2,16 @@ import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string to reverse: ");
+        String input = sc.nextLine();
 
-        // Input string from user
-        System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        String reversed = reverseUsingStringBuilder(input);
+        System.out.println("Reversed: " + reversed);
+    }
 
-        // Use StringBuilder to reverse the string
-        StringBuilder sb = new StringBuilder(input);
-        sb.reverse();
-
-        // Output the reversed string
-        String reversed = sb.toString();
-        System.out.println("Reversed string: " + reversed);
-
-        scanner.close();
+    public static String reverseUsingStringBuilder(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        return sb.reverse().toString();
     }
 }
