@@ -176,11 +176,10 @@ Below are the folders for each branch/module with their descriptions:
 | Day 03 – Use of `this`, `static`, `final`, and `instanceof`    | [Day-03_Day-03_This-Static-Final-InstanceOfOperator](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-03_Day-03_This-Static-Final-InstanceOfOperator) |
 | Day 04 – UML-based object modeling and class diagram examples   | [Object modeling](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-04_ObjectModeling-And-ClassDiagrams/Object%20modeling) |
 | Day 05 – Demonstration of single and multilevel inheritance     | [Day-05_Inheritance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-05_Inheritance) |
-| Day 06 – Encapsulation through accessors and mutators (getters/setters) | [Day-06_Encapsulation](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation) |
-| Day 07 – Polymorphism: method overloading and overriding       | [Day-07_Polymorphism](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-07_Polymorphism) |
-| Day 08 – Abstract classes and interfaces in OOP design         | [Day-08_AbstractAndInterface](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-08_AbstractAndInterface) |
+| Day 06 – Encapsulation, Polymorphism, and Abstraction Concepts | [Day-06_Encapsulation-Polymorphism-Abstract](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/OOPs/Day-06_Encapsulation-Polymorphism-Abstract) |
 
 ---
+
 
 ### 🔹 DSA
 
