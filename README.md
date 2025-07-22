@@ -58,8 +58,20 @@ Built a fully functional **E-Wallet system** that:
 - Logs transactions using the `Transaction` class
 
 #### ✅ Workshop 04 — Real-World OOP Applications
-- `BrowserNavigation.java`: Simulates browser tab navigation using stack/queue.
-- `SocialMediaNotification.java`: Mimics a social media notification feed.
+
+This workshop includes hands-on OOP-based Java programs simulating real-world systems like browser navigation, social media notifications, and a movie scheduling app using sorting.
+
+**Files:**
+
+- `BrowserNavigation.java`: Simulates browser tab navigation using Stack and Queue.
+- `SocialMediaNotification.java`: Mimics a social media notification feed using a Queue.
+
+**🎬 MovieTimeApp (inside `/MovieTimeApp` folder):**
+
+- `MainApp.java`: Main driver class for sorting and displaying movie shows.
+- `Show.java`: Class representing a movie show.
+- `ShowScheduler.java`: Utility class to sort shows by time using selection sort.
+
 
 ---
 
