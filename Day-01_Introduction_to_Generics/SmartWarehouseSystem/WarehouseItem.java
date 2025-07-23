@@ -22,3 +22,36 @@ public abstract class WarehouseItem {
         return "[" + getCategory() + "] ID: " + id + ", Name: " + name;
     }
 }
+
+class Electronics extends WarehouseItem {
+    public Electronics(String id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public String getCategory() {
+        return "Electronics";
+    }
+}
+
+class Furniture extends WarehouseItem {
+    public Furniture(String id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public String getCategory() {
+        return "Furniture";
+    }
+}
+
+class Groceries extends WarehouseItem {
+    public Groceries(String id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public String getCategory() {
+        return "Groceries";
+    }
+}
