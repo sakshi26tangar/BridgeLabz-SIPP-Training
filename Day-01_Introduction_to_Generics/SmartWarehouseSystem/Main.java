@@ -4,7 +4,7 @@ public class Main {
         electronicsStorage.addItem(new Electronics("E001", "Laptop"));
         electronicsStorage.addItem(new Electronics("E002", "Smartphone"));
         electronicsStorage.addItem(new Electronics("E003", "Tablet"));
-        electronicsStorage.addItem(new Electronics("E004", "Smartwatch"));
+        
 
         Storage<Groceries> groceriesStorage = new Storage<>();
         groceriesStorage.addItem(new Groceries("G001", "Rice"));
