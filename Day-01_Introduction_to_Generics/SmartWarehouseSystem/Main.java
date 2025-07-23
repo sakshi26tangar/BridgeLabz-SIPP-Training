@@ -3,14 +3,20 @@ public class Main {
         Storage<Electronics> electronicsStorage = new Storage<>();
         electronicsStorage.addItem(new Electronics("E001", "Laptop"));
         electronicsStorage.addItem(new Electronics("E002", "Smartphone"));
+        electronicsStorage.addItem(new Electronics("E003", "Tablet"));
+        electronicsStorage.addItem(new Electronics("E004", "Smartwatch"));
 
         Storage<Groceries> groceriesStorage = new Storage<>();
         groceriesStorage.addItem(new Groceries("G001", "Rice"));
         groceriesStorage.addItem(new Groceries("G002", "Wheat"));
+        groceriesStorage.addItem(new Groceries("G003", "Sugar"));
 
+        
         Storage<Furniture> furnitureStorage = new Storage<>();
         furnitureStorage.addItem(new Furniture("F001", "Chair"));
         furnitureStorage.addItem(new Furniture("F002", "Table"));
+        furnitureStorage.addItem(new Furniture("F003", "Desk"));
+    
 
         System.out.println("=== Electronics ===");
         WarehouseUtils.displayAllItems(electronicsStorage.getItems());
