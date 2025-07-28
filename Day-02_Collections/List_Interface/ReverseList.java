@@ -1,28 +1,31 @@
 import java.util.*;
-
+import java.util.Scanner;
 public class ReverseList {
     public static void main(String[] args) {
-      
-        List<Integer> arrayList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        System.out.println("Original ArrayList: " + arrayList);
-        reverseList(arrayList);
-        System.out.println("Reversed ArrayList: " + arrayList);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter integers (space-separated):");
+            List<Integer> arrayList = new ArrayList<>();
+            for (String s : sc.nextLine().split(" ")) {
+                arrayList.add(Integer.parseInt(s));
+            }
 
-        List<Integer> linkedList = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5));
-        System.out.println("\nOriginal LinkedList: " + linkedList);
-        reverseList(linkedList);
-        System.out.println("Reversed LinkedList: " + linkedList);
-    }
+            for (int i = 0, j = arrayList.size() - 1; i < j; i++, j--) {
+                int temp = arrayList.get(i);
+                arrayList.set(i, arrayList.get(j));
+                arrayList.set(j, temp);
+            }
+            System.out.println("Reversed ArrayList: " + arrayList);
 
-    public static <T> void reverseList(List<T> list) {
-        int left = 0;
-        int right = list.size() - 1;
-        while (left < right) {
-            T temp = list.get(left);
-            list.set(left, list.get(right));
-            list.set(right, temp);
-            left++;
-            right--;
+            LinkedList<Integer> linkedList = new LinkedList<>(arrayList);
+            for (int i = 0, j = linkedList.size() - 1; i < j; i++, j--) {
+                int temp = linkedList.get(i);
+                linkedList.set(i, linkedList.get(j));
+                linkedList.set(j, temp);
+            }
+            System.out.println("Reversed LinkedList: " + linkedList);
+        } catch (NumberFormatException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 }
