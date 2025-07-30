@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class CircularBuffer {
     static class CircularQueue {
         int[] buffer;
