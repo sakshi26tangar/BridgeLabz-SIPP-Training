@@ -1,0 +1,29 @@
+START
+CREATE two queues: regularLine, urgentLine
+
+FUNCTION registerClient(clientName, urgency):
+    IF urgency = "urgent":
+        ENQUEUE clientName into urgentLine
+    ELSE:
+        ENQUEUE clientName into regularLine
+
+FUNCTION attendClient():
+    IF urgentLine is NOT empty:
+        DEQUEUE from urgentLine
+        PRINT "Attending urgent client"
+    ELSE IF regularLine is NOT empty:
+        DEQUEUE from regularLine
+        PRINT "Attending regular client"
+    ELSE:
+        PRINT "No clients waiting"
+
+MAIN:
+    registerClient("Sakshi", "regular")
+    registerClient("Prakhar", "urgent")
+    registerClient("Sejal", "regular")
+
+    attendClient()  // Prakhar (urgent)
+    attendClient()  // Sakshi (regular)
+    attendClient()  // Sejal (regular)
+    attendClient()  // No clients waiting
+END
