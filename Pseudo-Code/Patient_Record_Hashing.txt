@@ -1,0 +1,34 @@
+START
+CREATE hashMap patientRecords  // Key = patientID, Value = patientData
+
+FUNCTION addPatient(patientID, patientData):
+    patientRecords[patientID] = patientData
+
+FUNCTION getPatient(patientID):
+    IF patientID exists in patientRecords:
+        RETURN patientRecords[patientID]
+    ELSE:
+        PRINT "Patient not found"
+
+FUNCTION updatePatient(patientID, newData):
+    IF patientID exists in patientRecords:
+        patientRecords[patientID] = newData
+        PRINT "Record updated"
+    ELSE:
+        PRINT "Patient not found"
+
+FUNCTION deletePatient(patientID):
+    IF patientID exists in patientRecords:
+        REMOVE patientID from patientRecords
+        PRINT "Record deleted"
+    ELSE:
+        PRINT "Patient not found"
+
+MAIN:
+    addPatient(101, "Sakshi Tangar, Age 30")
+    addPatient(102, "Prakhar, Age 25")
+    PRINT getPatient(101)  
+    updatePatient(102, "Sejal, Age 26")
+    deletePatient(101)
+    PRINT getPatient(101) 
+END
