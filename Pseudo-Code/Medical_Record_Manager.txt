@@ -1,0 +1,61 @@
+interface Searchable {
+    void search(String query);
+}
+
+interface Printable {
+    void print();
+}
+
+abstract class MedicalReport implements Searchable, Printable {
+    String patientName;
+
+    public MedicalReport(String patientName) {
+        this.patientName = patientName;
+    }
+}
+
+class BloodTestReport extends MedicalReport {
+    public BloodTestReport(String patientName) {
+        super(patientName);
+    }
+
+    @Override
+    public void search(String query) {
+        System.out.println("Searching Blood Test Report for " + query);
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Printing Blood Test Report for " + patientName);
+    }
+}
+
+class XRayReport extends MedicalReport {
+    public XRayReport(String patientName) {
+        super(patientName);
+    }
+
+    @Override
+    public void search(String query) {
+        System.out.println("Searching X-Ray Report for " + query);
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Printing X-Ray Report for " + patientName);
+    }
+}
+
+public class MedicalRecordManager {
+    public static void main(String[] args) {
+        MedicalReport report1 = new BloodTestReport("Ravi Kumar");
+        MedicalReport report2 = new XRayReport("Suman Sharma");
+
+        // Polymorphic behavior
+        report1.search("Hemoglobin Levels");
+        report1.print();
+
+        report2.search("Chest X-Ray");
+        report2.print();
+    }
+}
