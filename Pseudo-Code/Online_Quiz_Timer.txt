@@ -1,0 +1,23 @@
+START
+CREATE circularArray timeSlots[size]  // size = number of questions
+SET currentIndex = 0
+
+FUNCTION setTimeForQuestion(index, seconds):
+    timeSlots[index] = seconds
+
+FUNCTION startQuiz():
+    WHILE quiz not finished:
+        currentTime = timeSlots[currentIndex]
+        WHILE currentTime > 0:
+            IF currentTime <= 5:
+                PRINT "Warning: Time is almost up for this question!"
+            DECREMENT currentTime by 1
+            WAIT 1 second
+        MOVE currentIndex to (currentIndex + 1) % size
+
+MAIN:
+    setTimeForQuestion(0, 15)
+    setTimeForQuestion(1, 20)
+    setTimeForQuestion(2, 10)
+    startQuiz()
+END
