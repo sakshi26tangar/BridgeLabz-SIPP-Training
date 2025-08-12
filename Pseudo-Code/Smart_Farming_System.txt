@@ -1,0 +1,57 @@
+abstract class Crop {
+    protected String name;
+    protected int waterRequired;
+
+    public Crop(String name, int waterRequired) {
+        this.name = name;
+        this.waterRequired = waterRequired;
+    }
+
+    public abstract void getWaterRequirement();
+    public abstract void harvest();
+}
+
+class Rice extends Crop {
+    public Rice() {
+        super("Rice", 500);
+    }
+
+    @Override
+    public void getWaterRequirement() {
+        System.out.println(name + " needs " + waterRequired + " liters of water.");
+    }
+
+    @Override
+    public void harvest() {
+        System.out.println("Harvesting " + name + " in 120 days.");
+    }
+}
+
+class Wheat extends Crop {
+    public Wheat() {
+        super("Wheat", 300);
+    }
+
+    @Override
+    public void getWaterRequirement() {
+        System.out.println(name + " needs " + waterRequired + " liters of water.");
+    }
+
+    @Override
+    public void harvest() {
+        System.out.println("Harvesting " + name + " in 90 days.");
+    }
+}
+
+public class MainFarming {
+    public static void main(String[] args) {
+        Crop crop1 = new Rice();
+        Crop crop2 = new Wheat();
+
+        crop1.getWaterRequirement();
+        crop1.harvest();
+
+        crop2.getWaterRequirement();
+        crop2.harvest();
+    }
+}
