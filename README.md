@@ -19,6 +19,8 @@ This repository consists of the following main branches/modules:
 3. `core-java`
 4. `OOPs`
 5. `DSA`
+6. `Generics&Collections`
+7. `Java-8-Features`
 
 Each branch contains a series of tasks organized by **day**, ensuring consistent and structured learning.
 
