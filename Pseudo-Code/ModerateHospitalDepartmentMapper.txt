@@ -1,0 +1,17 @@
+Class Doctor
+    Attributes: name, specialization
+    Constructor(name, specialization)
+
+Main Program:
+    Create a Map<String, List<Doctor>> departmentMap
+
+    Add entries:
+        "Cardiology" -> list of doctors with specialization "Cardiologist"
+        "Neurology"  -> list of doctors with specialization "Neurologist"
+        "Orthopedics" -> list of doctors with specialization "Orthopedic"
+
+    Input: specializationToFilter
+    For each department in departmentMap
+        For each doctor in department's doctor list
+            If doctor.specialization == specializationToFilter
+                Print doctor.name + " in department " + department
