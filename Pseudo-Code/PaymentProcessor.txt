@@ -1,0 +1,23 @@
+Class Transaction<T>
+    Attributes: paymentMethod, amount
+    Constructor(paymentMethod, amount)
+    Method process() → print type of paymentMethod and amount
+
+Class UPI
+    Attribute: id
+    toString() → return UPI(id)
+
+Class Card
+    Attribute: number
+    toString() → return Card(number)
+
+Class NetBanking
+    Attribute: bank
+    toString() → return NetBanking(bank)
+
+Main Program:
+    Create Transaction<UPI> with UPI id and amount
+    Create Transaction<Card> with card number and amount
+    Create Transaction<NetBanking> with bank name and amount
+
+    Call process() on each transaction
