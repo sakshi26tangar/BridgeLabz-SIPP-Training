@@ -1,0 +1,16 @@
+Class Employee
+    Attributes: name, department
+    Constructor(name, department)
+
+Main Program:
+    Create ArrayList<Employee> employees
+    Add multiple Employee objects
+
+    Input: departmentToFilter
+
+    Use stream on employees list
+        Filter employees where department == departmentToFilter
+        Collect results into a new list
+
+    For each employee in filtered list:
+        Print employee.name + " from " + employee.department
