@@ -1,0 +1,11 @@
+Main Program:
+    Create HashMap<String, Integer> studentScores
+        Key = studentName
+        Value = marks
+
+    Insert multiple students with their scores
+
+    Use stream on entrySet of studentScores
+        Find entry with maximum value (highest score)
+
+    Print highest scorer's name and score

@@ -1,0 +1,29 @@
+START
+DEFINE maze as 2D grid (0 = open path, 1 = wall)
+CREATE solutionGrid same size as maze initialized with 0
+
+FUNCTION solveMaze(x, y):
+    IF x,y is destination cell:
+        solutionGrid[x][y] = 1
+        RETURN true
+
+    IF position (x, y) is safe (inside maze AND maze[x][y] == 0):
+        solutionGrid[x][y] = 1  // Mark path
+
+        IF solveMaze(x + 1, y): RETURN true  // Move Down
+        IF solveMaze(x, y + 1): RETURN true  // Move Right
+        IF solveMaze(x - 1, y): RETURN true  // Move Up
+        IF solveMaze(x, y - 1): RETURN true  // Move Left
+
+        solutionGrid[x][y] = 0  // Backtrack
+        RETURN false
+
+    RETURN false
+
+MAIN:
+    IF solveMaze(0, 0):
+        PRINT "Path Found"
+        PRINT solutionGrid
+    ELSE:
+        PRINT "No Path Found"
+END

@@ -1,0 +1,62 @@
+class Customer {
+    String name;
+    String address;
+
+    public Customer(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+}
+
+class Restaurant {
+    String name;
+    String cuisine;
+
+    public Restaurant(String name, String cuisine) {
+        this.name = name;
+        this.cuisine = cuisine;
+    }
+}
+
+class DeliveryBoy {
+    String name;
+    String phone;
+
+    public DeliveryBoy(String name, String phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+}
+
+class Order {
+    private Customer customer;
+    private Restaurant restaurant;
+    private DeliveryBoy deliveryBoy;
+    private String foodItem;
+
+    public Order(Customer customer, Restaurant restaurant, DeliveryBoy deliveryBoy, String foodItem) {
+        this.customer = customer;
+        this.restaurant = restaurant;
+        this.deliveryBoy = deliveryBoy;
+        this.foodItem = foodItem;
+    }
+
+    public void displayOrderDetails() {
+        System.out.println("Order Details:");
+        System.out.println("Customer: " + customer.name + " | Address: " + customer.address);
+        System.out.println("Restaurant: " + restaurant.name + " | Cuisine: " + restaurant.cuisine);
+        System.out.println("Delivery Boy: " + deliveryBoy.name + " | Phone: " + deliveryBoy.phone);
+        System.out.println("Food Item: " + foodItem);
+    }
+}
+
+public class FoodDeliverySystem {
+    public static void main(String[] args) {
+        Customer customer = new Customer("Amit", "MG Road");
+        Restaurant restaurant = new Restaurant("Pizza Hub", "Italian");
+        DeliveryBoy deliveryBoy = new DeliveryBoy("Rajesh", "9876543210");
+
+        Order order = new Order(customer, restaurant, deliveryBoy, "Margherita Pizza");
+        order.displayOrderDetails();
+    }
+}
