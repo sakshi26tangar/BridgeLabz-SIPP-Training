@@ -1,0 +1,33 @@
+CLASS Member
+    ATTRIBUTES:
+        name
+        memberID
+        membershipDate
+        membershipDurationMonths
+    
+    CONSTRUCTOR Member(mName, mID, mDate, durationMonths)
+        name ← mName
+        memberID ← mID
+        membershipDate ← mDate      // Format: DD/MM/YYYY
+        membershipDurationMonths ← durationMonths
+    
+    METHOD checkMembershipValidity(currentDate)
+        expiryDate ← membershipDate + membershipDurationMonths
+        IF currentDate <= expiryDate THEN
+            PRINT "Membership is valid"
+        ELSE
+            PRINT "Membership has expired"
+    
+    METHOD displayMemberInfo()
+        PRINT "Name: " + name
+        PRINT "ID: " + memberID
+        PRINT "Membership Date: " + membershipDate
+        PRINT "Duration (months): " + membershipDurationMonths
+
+
+
+MAIN PROGRAM:
+    CREATE member1 ← Member("Sakshi", "M001", "10/01/2024", 12)
+    CALL member1.displayMemberInfo()
+    
+    CALL member1.checkMembershipValidity("12/08/2025")

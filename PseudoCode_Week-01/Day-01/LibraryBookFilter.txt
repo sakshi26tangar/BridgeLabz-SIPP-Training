@@ -1,0 +1,12 @@
+Class Book
+    Attributes: title, year, rating
+    Constructor(title, year, rating)
+    Method toString() → return formatted book info
+
+Main Program:
+    Create a list of Book objects
+    Apply filter:
+        Keep only books where year > 2015 AND rating > 4.5
+    Collect results into a new list
+    For each book in filtered list:
+        Print book details

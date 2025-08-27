@@ -1,0 +1,24 @@
+START
+CREATE an empty stack called undoStack
+
+FUNCTION typeText(text):
+    PUSH text into undoStack
+
+FUNCTION undo():
+    IF undoStack is NOT empty:
+        POP last entry from undoStack
+        DISPLAY remaining stack contents
+    ELSE:
+        PRINT "Nothing to undo"
+
+MAIN:
+    typeText("Hello")
+    typeText("Hello World")
+    typeText("Hello World!!!")
+    
+    PRINT undoStack  // ["Hello", "Hello World", "Hello World!!!"]
+    undo()           // removes "Hello World!!!"
+    undo()           // removes "Hello World"
+    undo()           // removes "Hello"
+    undo()           // "Nothing to undo"
+END

@@ -1,0 +1,68 @@
+CLASS Pet
+    ATTRIBUTES:
+        name
+        age
+        breed
+    
+    CONSTRUCTOR Pet(petName, petAge, petBreed)
+        name ← petName
+        age ← petAge
+        breed ← petBreed
+    
+    METHOD displayInfo()
+        PRINT "Name: " + name
+        PRINT "Age: " + age
+        PRINT "Breed: " + breed
+
+
+
+CLASS Dog EXTENDS Pet
+    ATTRIBUTE:
+        isTrained
+    
+    CONSTRUCTOR Dog(petName, petAge, petBreed, trained)
+        CALL Pet CONSTRUCTOR(petName, petAge, petBreed)
+        isTrained ← trained
+    
+    METHOD displayInfo()
+        CALL super.displayInfo()
+        PRINT "Trained: " + isTrained
+
+
+
+CLASS Cat EXTENDS Pet
+    ATTRIBUTE:
+        color
+    
+    CONSTRUCTOR Cat(petName, petAge, petBreed, catColor)
+        CALL Pet CONSTRUCTOR(petName, petAge, petBreed)
+        color ← catColor
+    
+    METHOD displayInfo()
+        CALL super.displayInfo()
+        PRINT "Color: " + color
+
+
+
+CLASS Bird EXTENDS Pet
+    ATTRIBUTE:
+        canTalk
+    
+    CONSTRUCTOR Bird(petName, petAge, petBreed, talkAbility)
+        CALL Pet CONSTRUCTOR(petName, petAge, petBreed)
+        canTalk ← talkAbility
+    
+    METHOD displayInfo()
+        CALL super.displayInfo()
+        PRINT "Can Talk: " + canTalk
+
+
+
+MAIN PROGRAM:
+    CREATE dog1 ← Dog("Buddy", 3, "Labrador", TRUE)
+    CREATE cat1 ← Cat("Whiskers", 2, "Persian", "White")
+    CREATE bird1 ← Bird("Polly", 1, "Parrot", TRUE)
+    
+    CALL dog1.displayInfo()
+    CALL cat1.displayInfo()
+    CALL bird1.displayInfo()
