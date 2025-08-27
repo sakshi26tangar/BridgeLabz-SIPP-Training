@@ -1,0 +1,38 @@
+ENUM TrafficLight
+    RED
+    YELLOW
+    GREEN
+END ENUM
+
+CLASS TrafficSignal
+    VARIABLE currentLight AS TrafficLight
+    VARIABLE interval AS INTEGER
+
+    METHOD Constructor()
+        SET currentLight = TrafficLight.RED
+        SET interval = 0
+    END METHOD
+
+    METHOD changeLight()
+        IF currentLight == TrafficLight.RED THEN
+            SET currentLight = TrafficLight.GREEN
+        ELSE IF currentLight == TrafficLight.GREEN THEN
+            SET currentLight = TrafficLight.YELLOW
+        ELSE IF currentLight == TrafficLight.YELLOW THEN
+            SET currentLight = TrafficLight.RED
+        END IF
+    END METHOD
+
+    METHOD runSimulation(totalTime)
+        FOR t FROM 1 TO totalTime
+            PRINT "Time: " + t + " sec - Light: " + currentLight
+            WAIT 5 seconds
+            CALL changeLight()
+        END FOR
+    END METHOD
+END CLASS
+
+MAIN
+    CREATE obj AS TrafficSignal
+    CALL obj.runSimulation(30)
+END MAIN

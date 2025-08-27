@@ -1,0 +1,19 @@
+START
+CREATE a priorityQueue jobs  // Higher priority = earlier execution
+
+FUNCTION addJob(jobName, deadline, processingTime):
+    CALCULATE priority = deadline - processingTime
+    ENQUEUE job into priorityQueue based on priority
+
+FUNCTION processJobs():
+    WHILE priorityQueue is NOT empty:
+        job = DEQUEUE highest priority
+        PRINT "Processing job: " + job.name
+        WAIT job.processingTime seconds
+
+MAIN:
+    addJob("Report Generation", 5, 2)
+    addJob("Data Backup", 3, 1)
+    addJob("Email Sending", 4, 2)
+    processJobs()
+END

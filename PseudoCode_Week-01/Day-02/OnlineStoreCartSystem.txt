@@ -1,0 +1,15 @@
+Class Item
+    Attributes: name, price
+    Constructor(name, price)
+
+Function calculateTotalPrice(List<Item> items)
+    total = 0
+    For each item in items
+        total = total + item.price
+    Return total
+
+Main Program:
+    Create a List<Item> cart
+    Add few Item objects (e.g., "Shirt", 500; "Shoes", 1500)
+    Call calculateTotalPrice(cart)
+    Print "Total Price: " + result
