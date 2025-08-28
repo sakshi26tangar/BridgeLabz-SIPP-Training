@@ -19,7 +19,7 @@ class UserData implements Serializable {
 
 public class BackupSystem {
     public static void main(String[] args) {
-        UserData user = new UserData("Arjun", "arjun@example.com");
+        UserData user = new UserData("Sakshi", "Sakshi@example.com");
 
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("backup.ser"))) {
             out.writeObject(user);
