@@ -135,6 +135,32 @@ Focuses on **Data Structures and Algorithms** to enhance coding performance and 
 
 ---
 
+### 6. 🔸 `Generics&Collections`
+
+This branch covers **Java Generics, Collections Framework, Streams, Exceptions, and Regex/JUnit testing concepts** with hands-on practice.
+
+#### Topics Covered:
+- Introduction to Generics (type safety, parameterized classes, methods)
+- Collections Framework (List, Set, Map, utility methods)
+- Java Streams (filter, map, reduce, pipeline operations)
+- Exception Handling (try-catch, custom exceptions, best practices)
+- Regex and JUnit Testing (pattern matching, unit testing in Java)
+
+---
+
+### 7. 🔹 `Java-8-Features`
+
+This branch explores **modern Java 8 features** that improve functional-style programming and data processing efficiency.
+
+#### Topics Covered:
+- Lambda Expressions (syntax, functional style)
+- Functional Interfaces (`@FunctionalInterface`, default & static methods)
+- Stream API (stream creation, intermediate & terminal operations)
+- Collectors (grouping, partitioning, summarizing, reduction)
+
+---
+
+
 ## 📦 Folder Structure
 
 ### 1. `main`
@@ -192,6 +218,30 @@ Focuses on **Data Structures and Algorithms** to enhance coding performance and 
 | Day 03  | Sorting algorithms: Bubble, Selection, Merge, Quick, etc.         | [Day-03_SortingAlgorithms](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-03_SortingAlgorithms) |
 | Day 04-05 | Linear/Binary Search + StringBuilder vs StringBuffer           | [Day-04-05_SearchingAndStringPerformance](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-04-05_LinearAndBinarySearch) |
 | Day 06  | Runtime analysis and Big-O complexity                             | [Day-06_RuntimeAnalysis](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/DSA/Day-06_Algorithm's_Runtime_Analysis_%26_Big-O_Notation) |
+
+---
+
+### 6. `Generics&Collections`
+
+| Day / Folder Name               | Description                                     | Link                                                                               |
+|---------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------|
+| Day-01_Introduction_to_Generics | Basics of Generics, type safety, parameterized classes | [Day-01_Introduction_to_Generics](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-01_Introduction_to_Generics) |
+| Day-02_Collections              | Working with List, Set, Map, and Collection utilities | [Day-02_Collections](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-02_Collections) |
+| Day-03_JavaStreams              | Stream API usage, filtering, mapping, reducing   | [Day-03_JavaStreams](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-03_JavaStreams) |
+| Day-04_Exceptions               | Exception handling, custom exceptions, best practices | [Day-04_Exceptions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-04_Exceptions) |
+| Day-05_RegexAndJunit            | Regular Expressions and Unit Testing with JUnit | [Day-05_RegexAndJunit](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-05_RegexAndJunit) |
+| Pseudo-Code                     | Supporting pseudo-code examples for better understanding | [Pseudo-Code](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Pseudo-Code) |
+
+---
+
+### 7. `Java-8-Features`
+
+| Day / Folder Name              | Description                                         | Link                                                                               |
+|--------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------|
+| Day-01_LambdaExpression        | Introduction to Lambda expressions and syntax       | [Day-01_LambdaExpression](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Java-8-Features/Day-01_LambdaExpression) |
+| Day-02_Functional_Interfaces   | Functional interfaces, default & static methods     | [Day-02_Functional_Interfaces](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Java-8-Features/Day-02_Functional_Interfaces) |
+| Day-03_Stream_API              | Stream API operations, pipelines, terminal ops      | [Day-03_Stream_API](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Java-8-Features/Day-03_Stream_API) |
+| Day-04_Collectors              | Collectors, grouping, partitioning, and reduction   | [Day-04_Collectors](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Java-8-Features/Day-04_Collectors) |
 
 ---
 
