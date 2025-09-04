@@ -1,0 +1,64 @@
+Interface Promotion<T>
+    Method applyDiscount(customer : T, bookingAmount : Double) : Double
+
+
+Class RegularCustomer
+    Attributes: name, loyaltyPoints
+Class PremiumCustomer
+    Attributes: name, membershipYears
+Class CorporateCustomer
+    Attributes: companyName, employeeCount
+
+
+Class RegularPromotion implements Promotion<RegularCustomer>
+    Method applyDiscount(customer, bookingAmount)
+        discount = bookingAmount * 0.05
+        IF customer.loyaltyPoints > 100
+            discount += bookingAmount * 0.02
+        RETURN bookingAmount - discount
+
+
+Class PremiumPromotion implements Promotion<PremiumCustomer>
+    Method applyDiscount(customer, bookingAmount)
+        discount = bookingAmount * 0.15
+        IF customer.membershipYears > 5
+            discount += bookingAmount * 0.05
+        RETURN bookingAmount - discount
+
+
+Class CorporatePromotion implements Promotion<CorporateCustomer>
+    Method applyDiscount(customer, bookingAmount)
+        IF customer.employeeCount > 50
+            discount = bookingAmount * 0.20
+        ELSE
+            discount = bookingAmount * 0.10
+        RETURN bookingAmount - discount
+
+
+Class HotelBookingEngine<T>
+    Attributes: promotion : Promotion<T>
+
+    Constructor(promotion)
+        this.promotion = promotion
+
+    Method calculateFinalAmount(customer : T, bookingAmount : Double)
+        RETURN promotion.applyDiscount(customer, bookingAmount)
+
+
+Class Main
+    Method main()
+        rc = new RegularCustomer("Alice", 120)
+        pc = new PremiumCustomer("Bob", 6)
+        cc = new CorporateCustomer("TechCorp", 75)
+
+        regEngine = new HotelBookingEngine<RegularCustomer>(new RegularPromotion())
+        PRINT "Final bill for Regular Customer: " +
+              regEngine.calculateFinalAmount(rc, 10000)
+
+        premEngine = new HotelBookingEngine<PremiumCustomer>(new PremiumPromotion())
+        PRINT "Final bill for Premium Customer: " +
+              premEngine.calculateFinalAmount(pc, 20000)
+
+        corpEngine = new HotelBookingEngine<CorporateCustomer>(new CorporatePromotion())
+        PRINT "Final bill for Corporate Customer: " +
+              corpEngine.calculateFinalAmount(cc, 50000)

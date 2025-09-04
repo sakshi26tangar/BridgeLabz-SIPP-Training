@@ -1,0 +1,71 @@
+CLASS Pet
+    PRIVATE name
+    PRIVATE species
+    PRIVATE lastVaccinationDate   // LocalDate
+    
+    METHOD Constructor(name, species, lastVaccinationDate)
+        SET this.name = name
+        SET this.species = species
+        SET this.lastVaccinationDate = lastVaccinationDate
+    
+    METHOD getName()
+        RETURN name
+    
+    METHOD getSpecies()
+        RETURN species
+    
+    METHOD getLastVaccinationDate()
+        RETURN lastVaccinationDate
+END CLASS
+
+
+CLASS ClinicManager
+    PRIVATE pets (List of Pet)
+    PRIVATE reminders (List of Pet)
+    
+    METHOD Constructor()
+        SET pets = empty list
+        SET reminders = empty list
+    
+    METHOD registerPet(pet)
+        ADD pet to pets
+        PRINT "Registering Pet: " + pet.getName() + " (" + pet.getSpecies() + ")"
+        PRINT "Last Vaccination: " + pet.getLastVaccinationDate()
+        CALL checkVaccinationStatus(pet)
+    
+    METHOD checkVaccinationStatus(pet)
+        monthsElapsed = MONTHS_BETWEEN(pet.lastVaccinationDate, TODAY)
+        
+        IF monthsElapsed > 12
+            PRINT "Status: Vaccination OVERDUE! Please vaccinate immediately."
+        ELSE IF monthsElapsed == 11
+            PRINT "Status: Vaccination due in 1 month. Reminder set."
+            ADD pet to reminders
+        ELSE
+            PRINT "Status: Vaccination up-to-date."
+    
+    METHOD viewReminders()
+        PRINT "Reminder List:"
+        FOR each pet IN reminders
+            PRINT pet.getName() + " (" + pet.getSpecies() + ") - Vaccination due soon."
+END CLASS
+
+
+// -------------------- MAIN SIMULATION --------------------
+METHOD main()
+    clinic = NEW ClinicManager()
+    
+    // Day 1
+    bruno = NEW Pet("Bruno", "Dog", DATE("2024-10-12"))
+    clinic.registerPet(bruno)
+    
+    // Day 2
+    mittens = NEW Pet("Mittens", "Cat", DATE("2023-06-15"))
+    clinic.registerPet(mittens)
+    
+    // Day 3
+    snowy = NEW Pet("Snowy", "Rabbit", DATE("2024-09-10"))
+    clinic.registerPet(snowy)
+    
+    clinic.viewReminders()
+END METHOD

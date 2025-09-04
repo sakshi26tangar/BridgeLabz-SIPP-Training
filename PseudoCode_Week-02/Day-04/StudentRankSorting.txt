@@ -1,0 +1,80 @@
+CLASS Student
+    name (String)
+    marks (int)
+
+    METHOD Constructor(name, marks)
+        this.name = name
+        this.marks = marks
+END CLASS
+
+
+FUNCTION mergeSort(studentList)
+    IF size of studentList <= 1
+        RETURN studentList
+    
+    mid = size / 2
+    left = mergeSort(studentList[0 ... mid-1])
+    right = mergeSort(studentList[mid ... end])
+    
+    RETURN merge(left, right)
+END FUNCTION
+
+
+FUNCTION merge(leftList, rightList)
+    result = empty list
+    i = 0
+    j = 0
+
+    WHILE i < size(leftList) AND j < size(rightList)
+        studentL = leftList[i]
+        studentR = rightList[j]
+        
+        // Custom comparator:
+        IF studentL.marks > studentR.marks
+            ADD studentL to result
+            i++
+        ELSE IF studentL.marks < studentR.marks
+            ADD studentR to result
+            j++
+        ELSE   // marks equal → compare names
+            IF studentL.name < studentR.name   // Alphabetical
+                ADD studentL to result
+                i++
+            ELSE
+                ADD studentR to result
+                j++
+    
+    // Add leftovers
+    WHILE i < size(leftList)
+        ADD leftList[i] to result
+        i++
+    WHILE j < size(rightList)
+        ADD rightList[j] to result
+        j++
+    
+    RETURN result
+END FUNCTION
+
+
+// ----------------- MAIN DEMO -----------------
+METHOD main()
+    students = [
+        ("Rahul", 88),
+        ("Aditi", 95),
+        ("Zoya", 88),
+        ("Karan", 76),
+        ("Meera", 95),
+        ("Aarav", 92)
+    ]
+    
+    PRINT "Unsorted List:"
+    PRINT students
+    
+    sortedList = mergeSort(students)
+    
+    PRINT "Sorted Rank List:"
+    rank = 1
+    FOR each student IN sortedList
+        PRINT rank + ". " + student.name + " - " + student.marks
+        rank++
+END METHOD

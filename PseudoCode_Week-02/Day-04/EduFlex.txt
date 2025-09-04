@@ -1,0 +1,94 @@
+ABSTRACT CLASS Course
+    PROTECTED title
+    PROTECTED duration
+    PROTECTED price
+    PROTECTED instructor (Instructor)
+    PROTECTED schedule (Schedule)
+    
+    METHOD Constructor(title, duration, price, instructor, schedule)
+        SET fields
+    
+    ABSTRACT METHOD conductAssessment()
+    
+    METHOD showDetails()
+        PRINT "Course: " + title
+        PRINT "Instructor: " + instructor.getName() + " (" + instructor.getExpertise() + ")"
+        PRINT "Schedule: " + schedule.getDetails()
+END CLASS
+
+
+CLASS ProgrammingCourse EXTENDS Course
+    METHOD conductAssessment()
+        PRINT "Assessment: Conducting coding challenge on HackerRank..."
+END CLASS
+
+
+CLASS DesignCourse EXTENDS Course
+    METHOD conductAssessment()
+        PRINT "Assessment: Submit a portfolio of 3 app designs."
+END CLASS
+
+
+CLASS BusinessCourse EXTENDS Course
+    METHOD conductAssessment()
+        PRINT "Assessment: Group case-study presentation scheduled next week."
+END CLASS
+
+
+CLASS Instructor
+    PRIVATE name
+    PRIVATE expertise
+    PRIVATE rating
+    
+    METHOD Constructor(name, expertise, rating)
+        SET fields
+    
+    METHOD getName()
+        RETURN name
+    METHOD getExpertise()
+        RETURN expertise
+    METHOD getRating()
+        RETURN rating
+END CLASS
+
+
+CLASS Schedule
+    PRIVATE dayOfWeek
+    PRIVATE timeSlot
+    PRIVATE mode   // Live / Recorded
+    
+    METHOD Constructor(dayOfWeek, timeSlot, mode)
+        SET fields
+    
+    METHOD getDetails()
+        RETURN dayOfWeek + " " + timeSlot + " (" + mode + ")"
+END CLASS
+
+
+// -------------------- MAIN SIMULATION --------------------
+METHOD main()
+    // Programming Course
+    instructor1 = NEW Instructor("Dr. Rajeev", "Java Expert", 4.8)
+    schedule1 = NEW Schedule("Monday", "7-9 PM", "Live")
+    course1 = NEW ProgrammingCourse("Java Mastery", "8 weeks", 4999, instructor1, schedule1)
+    
+    // Design Course
+    instructor2 = NEW Instructor("Ms. Ananya", "UX Designer", 4.5)
+    schedule2 = NEW Schedule("Flexible", "Self-paced", "Recorded")
+    course2 = NEW DesignCourse("UX Design Fundamentals", "6 weeks", 3999, instructor2, schedule2)
+    
+    // Business Course
+    instructor3 = NEW Instructor("Mr. Arvind", "Business Analyst", 4.6)
+    schedule3 = NEW Schedule("Friday", "6-8 PM", "Live")
+    course3 = NEW BusinessCourse("Business Strategy 101", "10 weeks", 5999, instructor3, schedule3)
+    
+    // Show course details + assessments
+    course1.showDetails()
+    course1.conductAssessment()
+    
+    course2.showDetails()
+    course2.conductAssessment()
+    
+    course3.showDetails()
+    course3.conductAssessment()
+END METHOD

@@ -1,0 +1,49 @@
+CLASS Graph
+    adjacencyList = Map<String, List<String>>
+    
+    METHOD addFriendship(user1, user2)
+        ADD user2 to adjacencyList[user1]
+        ADD user1 to adjacencyList[user2]
+    
+    METHOD recommendFriends(user)
+        directFriends = adjacencyList[user]
+        visited = Set()
+        queue = Queue()
+        
+        ADD user to visited
+        ENQUEUE (user, level = 0)
+        
+        recommendations = empty list
+        
+        WHILE queue not empty
+            (current, level) = DEQUEUE
+            
+            FOR each neighbor IN adjacencyList[current]
+                IF neighbor not in visited
+                    visited.add(neighbor)
+                    IF level + 1 == 2
+                        IF neighbor NOT IN directFriends AND neighbor != user
+                            ADD neighbor to recommendations
+                    ENQUEUE (neighbor, level + 1)
+        
+        RETURN recommendations
+END CLASS
+
+
+// ----------------- MAIN DEMO -----------------
+METHOD main()
+    graph = NEW Graph()
+    
+    // Build network
+    graph.addFriendship("Alice", "Bob")
+    graph.addFriendship("Alice", "Charlie")
+    graph.addFriendship("Bob", "David")
+    graph.addFriendship("Bob", "Emma")
+    graph.addFriendship("Charlie", "Frank")
+    
+    PRINT "Current User: Alice"
+    PRINT "Direct Friends: " + graph.adjacencyList["Alice"]
+    
+    suggestions = graph.recommendFriends("Alice")
+    PRINT "Friend Suggestions: " + suggestions
+END METHOD

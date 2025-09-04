@@ -1,0 +1,69 @@
+Class Product
+    Attributes:
+        name : String
+        category : String
+        stock : Integer
+
+    Constructor(name, category, stock)
+        this.name = name
+        this.category = category
+        this.stock = stock
+
+
+Class OnlineStoreInventoryReport
+    Procedure generateReport(products : List<Product>)
+        IF products IS EMPTY THEN
+            PRINT "No products available in the inventory."
+            RETURN
+        END IF
+
+        // Clean invalid data
+        products = products.filter(product ->
+            product.stock >= 0 AND product.category != null
+        )
+
+        // Group products by category → total stock
+        stockByCategory = products.stream()
+            .collect(groupingBy(product.category, summingInt(product.stock)))
+
+        PRINT "Choose report type:"
+        PRINT "1. Show stock by category"
+        PRINT "2. Show total stock across all categories"
+        PRINT "3. Show both"
+        choice = READ_INPUT()
+
+        SWITCH(choice)
+            CASE 1:
+                PRINT "---- Stock by Category ----"
+                FOR EACH entry IN stockByCategory
+                    PRINT entry.key + " : " + entry.value + " units"
+                END FOR
+            CASE 2:
+                totalStock = stockByCategory.values().stream().sum()
+                PRINT "---- Total Stock ----"
+                PRINT "Total stock available = " + totalStock + " units"
+            CASE 3:
+                PRINT "---- Stock by Category ----"
+                FOR EACH entry IN stockByCategory
+                    PRINT entry.key + " : " + entry.value + " units"
+                END FOR
+                totalStock = stockByCategory.values().stream().sum()
+                PRINT "---- Total Stock ----"
+                PRINT "Total stock available = " + totalStock + " units"
+            DEFAULT:
+                PRINT "Invalid choice. Please select 1, 2, or 3."
+        END SWITCH
+
+
+Class Main
+    Method main()
+        products = [
+            new Product("Laptop", "Electronics", 5),
+            new Product("Shirt", "Clothing", 10),
+            new Product("Phone", "Electronics", 7),
+            new Product("Shoes", "Clothing", 3),
+            new Product("Book", null, 4),        // Ignored (null category)
+            new Product("Tablet", "Electronics", -2) // Ignored (negative stock)
+        ]
+
+        CALL OnlineStoreInventoryReport.generateReport(products)
