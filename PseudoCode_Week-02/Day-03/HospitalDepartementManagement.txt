@@ -1,0 +1,52 @@
+Class: Doctor
+    Attributes:
+        name : String
+        specialization : String
+        experienceYears : Integer
+
+    Methods:
+        constructor(name : String, specialization : String, experienceYears : Integer)
+            this.name = name
+            this.specialization = specialization
+            this.experienceYears = experienceYears
+
+        getDetails() : String
+            return name + " - " + specialization + " (" + experienceYears + " years)"
+
+
+Class: HospitalDirectory
+    Attributes:
+        departments : Map<String, List<Doctor>>
+
+    Methods:
+        constructor()
+            departments = new Map()
+
+        addDepartment(departmentName : String)
+            if departmentName not in departments:
+                departments[departmentName] = new List()
+
+        addDoctor(departmentName : String, doctor : Doctor)
+            if departmentName not in departments:
+                addDepartment(departmentName)
+            departments[departmentName].add(doctor)
+
+        getDoctors(departmentName : String) : List<Doctor>
+            return departments.getOrDefault(departmentName, empty List)
+
+
+Class: Main
+    Methods:
+        main()
+            directory = new HospitalDirectory()
+
+            directory.addDoctor("Cardiology", new Doctor("Dr. Mehta", "Cardiologist", 15))
+            directory.addDoctor("Cardiology", new Doctor("Dr. Kapoor", "Cardiologist", 10))
+            directory.addDoctor("Neurology", new Doctor("Dr. Sharma", "Neurologist", 10))
+            directory.addDoctor("Neurology", new Doctor("Dr. Das", "Neurologist", 8))
+            directory.addDoctor("Pediatrics", new Doctor("Dr. Ritu", "Pediatrician", 12))
+            directory.addDoctor("Pediatrics", new Doctor("Dr. Anjali", "Pediatrician", 7))
+
+            neurologyDoctors = directory.getDoctors("Neurology")
+            for doctor in neurologyDoctors:
+                print(doctor.getDetails())

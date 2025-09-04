@@ -1,0 +1,71 @@
+CLASS Course
+    PRIVATE title
+    PRIVATE duration
+    PRIVATE price
+    
+    METHOD Constructor(title, duration, price)
+        SET this.title = title
+        SET this.duration = duration
+        SET this.price = price
+    
+    METHOD getTitle()
+        RETURN title
+    
+    METHOD getDuration()
+        RETURN duration
+    
+    METHOD getPrice()
+        RETURN price
+    
+    METHOD toString()
+        RETURN title + " - " + duration + " weeks - ₹" + price
+END CLASS
+
+
+CLASS Student
+    PRIVATE name
+    PRIVATE email
+    PRIVATE enrolledCourses (List of Course)
+    
+    METHOD Constructor(name, email)
+        SET this.name = name
+        SET this.email = email
+        SET enrolledCourses = empty list
+    
+    METHOD enrollCourse(course)
+        IF course NOT IN enrolledCourses
+            ADD course to enrolledCourses
+            PRINT name + " successfully enrolled in " + course.getTitle()
+        ELSE
+            PRINT "Already enrolled in " + course.getTitle()
+    
+    METHOD viewEnrolledCourses()
+        PRINT name + "'s Enrolled Courses:"
+        SET counter = 1
+        FOR each course IN enrolledCourses
+            PRINT counter + ". " + course.toString()
+            counter = counter + 1
+END CLASS
+
+
+// -------------------- MAIN SIMULATION --------------------
+METHOD main()
+    // Step 1: EduPrime creates courses
+    course1 = NEW Course("Java Programming Basics", 6, 4999)
+    course2 = NEW Course("Data Structures in Java", 8, 5999)
+    course3 = NEW Course("Spring Boot for Web Development", 10, 6999)
+    
+    // Step 2: Student Amit
+    amit = NEW Student("Amit", "amit@email.com")
+    amit.enrollCourse(course1)
+    amit.enrollCourse(course2)
+    
+    // Step 3: Student Priya
+    priya = NEW Student("Priya", "priya@email.com")
+    priya.enrollCourse(course3)
+    priya.enrollCourse(course1)
+    
+    // Step 4: View enrolled courses
+    amit.viewEnrolledCourses()
+    priya.viewEnrolledCourses()
+END METHOD

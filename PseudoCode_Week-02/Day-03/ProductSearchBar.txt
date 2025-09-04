@@ -1,0 +1,44 @@
+FUNCTION binarySearch(catalog, target)
+    left = 0
+    right = length(catalog) - 1
+    
+    WHILE left <= right
+        mid = (left + right) / 2
+        IF catalog[mid] == target
+            RETURN mid   // Product found at index mid
+        ELSE IF catalog[mid] < target
+            left = mid + 1
+        ELSE
+            right = mid - 1
+    END WHILE
+    
+    RETURN -1  // Product not found
+END FUNCTION
+
+
+// -------------------- MAIN SIMULATION --------------------
+METHOD main()
+    catalog = ["AirPods", "Backpack", "Camera", "Laptop", 
+               "Shoes", "Smartphone", "Watch"]
+    
+    // Step 1: Rohan searches "Laptop"
+    result = binarySearch(catalog, "Laptop")
+    IF result != -1
+        PRINT "Laptop available in Electronics category."
+    ELSE
+        PRINT "Sorry, Laptop is currently out of stock."
+    
+    // Step 2: Priya searches "Headphones"
+    result = binarySearch(catalog, "Headphones")
+    IF result != -1
+        PRINT "Headphones available."
+    ELSE
+        PRINT "Sorry, Headphones are currently out of stock."
+    
+    // Step 3: Ali searches "Shoes"
+    result = binarySearch(catalog, "Shoes")
+    IF result != -1
+        PRINT "Shoes available with multiple options."
+    ELSE
+        PRINT "Shoes not found."
+END METHOD

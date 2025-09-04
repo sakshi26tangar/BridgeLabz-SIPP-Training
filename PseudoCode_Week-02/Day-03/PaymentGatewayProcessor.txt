@@ -1,0 +1,78 @@
+Class: Transaction<T>
+    Attributes:
+        paymentData : T
+
+    Methods:
+        constructor(paymentData : T)
+            this.paymentData = paymentData
+
+        processPayment() : void
+            print("Processing Payment...")
+            print(paymentData.getPaymentDetails())
+
+
+Class: UPI
+    Attributes:
+        upiId : String
+        amount : Double
+        merchantName : String
+
+    Methods:
+        constructor(upiId : String, amount : Double, merchantName : String)
+            this.upiId = upiId
+            this.amount = amount
+            this.merchantName = merchantName
+
+        getPaymentDetails() : String
+            return "Payment of ₹" + amount + " via UPI successful for " + merchantName
+
+
+Class: Card
+    Attributes:
+        cardNumber : String
+        cvv : String
+        expiryDate : String
+        amount : Double
+        merchantName : String
+
+    Methods:
+        constructor(cardNumber : String, cvv : String, expiryDate : String, amount : Double, merchantName : String)
+            this.cardNumber = cardNumber
+            this.cvv = cvv
+            this.expiryDate = expiryDate
+            this.amount = amount
+            this.merchantName = merchantName
+
+        getPaymentDetails() : String
+            lastDigits = last 4 digits of cardNumber
+            return "Payment of ₹" + amount + " via Card ending " + lastDigits + " successful for " + merchantName
+
+
+Class: NetBanking
+    Attributes:
+        bankName : String
+        accountNumber : String
+        amount : Double
+        merchantName : String
+
+    Methods:
+        constructor(bankName : String, accountNumber : String, amount : Double, merchantName : String)
+            this.bankName = bankName
+            this.accountNumber = accountNumber
+            this.amount = amount
+            this.merchantName = merchantName
+
+        getPaymentDetails() : String
+            return "Payment of ₹" + amount + " via NetBanking (" + bankName + ") successful for " + merchantName
+
+
+Class: Main
+    Methods:
+        main()
+            t1 = new Transaction<UPI>(new UPI("ramesh@upi", 1200, "Amazon"))
+            t2 = new Transaction<Card>(new Card("1234-5678-9876-5432", "123", "12/27", 5000, "MakeMyTrip"))
+            t3 = new Transaction<NetBanking>(new NetBanking("HDFC", "00112233", 8000, "Salary Payment"))
+
+            t1.processPayment()
+            t2.processPayment()
+            t3.processPayment()

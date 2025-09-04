@@ -1,0 +1,72 @@
+CLASS Student
+    ATTRIBUTE name
+    ATTRIBUTE marks
+    
+    METHOD Constructor(name, marks)
+        SET this.name = name
+        SET this.marks = marks
+END CLASS
+
+
+FUNCTION mergeSort(studentList)
+    IF length(studentList) <= 1
+        RETURN studentList
+    
+    mid = length(studentList) / 2
+    leftHalf = mergeSort(studentList[0..mid-1])
+    rightHalf = mergeSort(studentList[mid..end])
+    
+    RETURN merge(leftHalf, rightHalf)
+END FUNCTION
+
+
+FUNCTION merge(left, right)
+    result = empty list
+    i = 0
+    j = 0
+    
+    WHILE i < length(left) AND j < length(right)
+        // Primary comparison: marks (descending)
+        IF left[i].marks > right[j].marks
+            ADD left[i] to result
+            i = i + 1
+        ELSE IF left[i].marks < right[j].marks
+            ADD right[j] to result
+            j = j + 1
+        ELSE
+            // Tie-breaker: name (alphabetical)
+            IF left[i].name < right[j].name
+                ADD left[i] to result
+                i = i + 1
+            ELSE
+                ADD right[j] to result
+                j = j + 1
+    
+    // Add remaining students
+    WHILE i < length(left)
+        ADD left[i] to result
+        i = i + 1
+    WHILE j < length(right)
+        ADD right[j] to result
+        j = j + 1
+    
+    RETURN result
+END FUNCTION
+
+
+// -------------------- MAIN SIMULATION --------------------
+METHOD main()
+    students = [
+        NEW Student("Amit", 92),
+        NEW Student("Bhavna", 92),
+        NEW Student("Kiran", 85),
+        NEW Student("Dinesh", 78),
+        NEW Student("Charu", 92)
+    ]
+    
+    sortedList = mergeSort(students)
+    
+    PRINT "Final Rank List:"
+    FOR each student IN sortedList
+        PRINT student.name + " - " + student.marks
+END METHOD
