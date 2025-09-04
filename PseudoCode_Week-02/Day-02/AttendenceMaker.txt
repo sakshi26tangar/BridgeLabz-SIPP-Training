@@ -1,0 +1,56 @@
+CLASS AttendanceSystem
+    ATTRIBUTES:
+        studentNames : List<String>
+        records : 2D Array of Integer // 1 = Present, 0 = Absent
+        totalDays : Integer
+
+    CONSTRUCTOR(studentList : List<String>, days : Integer)
+        studentNames = studentList
+        totalDays = days
+        records = NEW 2D Array[studentList.size()][days]
+        FOR i FROM 0 TO studentList.size()-1
+            FOR j FROM 0 TO days-1
+                records[i][j] = 0  // default Absent
+
+    METHOD markAttendance(studentIndex : Integer, day : Integer, status : Integer)
+        records[studentIndex][day-1] = status
+
+    METHOD dailyAttendanceSummary(day : Integer) : Integer
+        count = 0
+        FOR i FROM 0 TO studentNames.size()-1
+            IF records[i][day-1] == 1 THEN
+                count += 1
+        RETURN count
+
+    METHOD monthlyAttendance(studentIndex : Integer) : Integer
+        total = 0
+        FOR day FROM 0 TO totalDays-1
+            IF records[studentIndex][day] == 1 THEN
+                total += 1
+        RETURN total
+
+    METHOD defaulterList(minDaysPresent : Integer)
+        PRINT "Students with attendance less than", minDaysPresent
+        FOR i FROM 0 TO studentNames.size()-1
+            totalPresent = monthlyAttendance(i)
+            IF totalPresent < minDaysPresent THEN
+                PRINT studentNames[i], "(", i+1, ")"
+END CLASS
+
+
+// Main Execution
+START
+    students = ["Alice", "Bob", "Charlie", "David", "Eve"]
+    attendance = NEW AttendanceSystem(students, 30)
+
+    attendance.markAttendance(0, 1, 1)
+    attendance.markAttendance(1, 1, 0)
+    attendance.markAttendance(2, 1, 1)
+    attendance.markAttendance(3, 1, 1)
+    attendance.markAttendance(4, 1, 0)
+
+    PRINT "Students present on Day 1:", attendance.dailyAttendanceSummary(1)
+    PRINT "Total attendance for Student 1:", attendance.monthlyAttendance(0)
+
+    attendance.defaulterList(22)
+END

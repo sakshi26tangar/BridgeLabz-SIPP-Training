@@ -1,0 +1,27 @@
+Class: SurveyResponse
+    Attributes:
+        restaurantName : String
+        rating : Integer
+
+
+Class: SurveyReportGenerator
+    Attributes:
+        responses : List<SurveyResponse>
+        averageRatings : Map<String, Double>
+
+    Methods:
+        constructor(responses : List<SurveyResponse>)
+            this.responses = responses
+            this.averageRatings = new Map()
+
+        calculateAverageRatings() : void
+            grouped = group responses by restaurantName
+            for each restaurant in grouped:
+                avg = average of ratings for that restaurant
+                averageRatings[restaurant] = avg
+
+        getHighestRatedRestaurant() : String
+            return entry with max value in averageRatings
+
+        getLowestRatedRestaurant() : String
+            return entry with min value in averageRatings

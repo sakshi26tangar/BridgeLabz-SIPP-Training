@@ -1,0 +1,26 @@
+Class: WordCounter
+    Attributes:
+        text : String
+        wordFrequency : Map<String, Integer>
+
+    Methods:
+        constructor(text : String)
+            this.text = text
+            this.wordFrequency = new Map()
+
+        processText() : void
+            words = split(normalize(text))
+            for word in words:
+                if wordFrequency contains word:
+                    wordFrequency[word] = wordFrequency[word] + 1
+                else:
+                    wordFrequency[word] = 1
+
+        getWordCount(word : String) : Integer
+            return wordFrequency.getOrDefault(word, 0)
+
+        getMostFrequentWord() : String
+            return maxEntryByValue(wordFrequency)
+
+        getRareWords() : List<String>
+            return all keys in wordFrequency where value == 1

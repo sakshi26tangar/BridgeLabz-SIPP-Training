@@ -1,0 +1,85 @@
+CLASS BusStop
+    ATTRIBUTES:
+        name : String
+        nextStop : BusStop
+
+    CONSTRUCTOR(name)
+        this.name = name
+        this.nextStop = null
+END CLASS
+
+
+CLASS BusRoute
+    ATTRIBUTES:
+        firstStop : BusStop
+
+    CONSTRUCTOR()
+        firstStop = null
+
+    METHOD addStopToEnd(stopName : String)
+        newStop = NEW BusStop(stopName)
+        IF firstStop IS null THEN
+            firstStop = newStop
+            RETURN
+        current = firstStop
+        WHILE current.nextStop IS NOT null
+            current = current.nextStop
+        current.nextStop = newStop
+
+    METHOD insertStopAfter(existingStop : String, newStop : String)
+        current = firstStop
+        WHILE current IS NOT null
+            IF current.name == existingStop THEN
+                temp = NEW BusStop(newStop)
+                temp.nextStop = current.nextStop
+                current.nextStop = temp
+                RETURN
+            current = current.nextStop
+        PRINT "Stop", existingStop, "not found"
+
+    METHOD deleteStop(stopName : String)
+        IF firstStop IS null THEN RETURN
+        IF firstStop.name == stopName THEN
+            firstStop = firstStop.nextStop
+            RETURN
+        current = firstStop
+        WHILE current.nextStop IS NOT null
+            IF current.nextStop.name == stopName THEN
+                current.nextStop = current.nextStop.nextStop
+                RETURN
+            current = current.nextStop
+        PRINT "Stop", stopName, "not found"
+
+    METHOD searchStop(stopName : String) : Boolean
+        current = firstStop
+        WHILE current IS NOT null
+            IF current.name == stopName THEN
+                RETURN true
+            current = current.nextStop
+        RETURN false
+
+    METHOD displayRoute()
+        current = firstStop
+        routeStr = ""
+        WHILE current IS NOT null
+            routeStr += current.name + " → "
+            current = current.nextStop
+        PRINT "Bus Route:", routeStr
+END CLASS
+
+
+// Main Execution
+START
+    route = NEW BusRoute()
+    route.addStopToEnd("Depot")
+    route.addStopToEnd("Main Street")
+    route.addStopToEnd("City Mall")
+    route.addStopToEnd("Hospital")
+    route.addStopToEnd("Airport")
+
+    route.insertStopAfter("City Mall", "University Stop")
+    route.deleteStop("Hospital")
+
+    route.displayRoute()
+    PRINT "Is Airport in route?", route.searchStop("Airport")
+END

@@ -1,0 +1,73 @@
+CLASS Vehicle
+    ATTRIBUTES:
+        vehicleNumber : String
+        entryTime : Float  // use hours in 24hr format
+
+    CONSTRUCTOR(vehicleNumber, entryTime)
+        this.vehicleNumber = vehicleNumber
+        this.entryTime = entryTime
+
+    METHOD calculateFee(exitTime : Float) : Float
+        PRINT "Base fee calculation"
+        RETURN 0
+END CLASS
+
+
+CLASS Car EXTENDS Vehicle
+    ATTRIBUTES:
+        baseFee : Float = 50
+        extraHourFee : Float = 30
+
+    CONSTRUCTOR(vehicleNumber, entryTime)
+        CALL super(vehicleNumber, entryTime)
+
+    OVERRIDE METHOD calculateFee(exitTime : Float) : Float
+        hoursParked = exitTime - entryTime
+        extraHours = CEIL(hoursParked - 1)
+        fee = baseFee + (extraHours * extraHourFee)
+        RETURN fee
+END CLASS
+
+
+CLASS Bike EXTENDS Vehicle
+    ATTRIBUTES:
+        baseFee : Float = 20
+        extraHourFee : Float = 10
+
+    CONSTRUCTOR(vehicleNumber, entryTime)
+        CALL super(vehicleNumber, entryTime)
+
+    OVERRIDE METHOD calculateFee(exitTime : Float) : Float
+        hoursParked = exitTime - entryTime
+        extraHours = CEIL(hoursParked - 1)
+        fee = baseFee + (extraHours * extraHourFee)
+        RETURN fee
+END CLASS
+
+
+CLASS Truck EXTENDS Vehicle
+    ATTRIBUTES:
+        baseFee : Float = 100
+        extraHourFee : Float = 50
+
+    CONSTRUCTOR(vehicleNumber, entryTime)
+        CALL super(vehicleNumber, entryTime)
+
+    OVERRIDE METHOD calculateFee(exitTime : Float) : Float
+        hoursParked = exitTime - entryTime
+        extraHours = CEIL(hoursParked - 1)
+        fee = baseFee + (extraHours * extraHourFee)
+        RETURN fee
+END CLASS
+
+
+// Main Execution
+START
+    car1 = NEW Car("KA05AB1234", 10.0)
+    bike1 = NEW Bike("KA05XY7890", 11.25)
+    truck1 = NEW Truck("KA09TR5566", 9.5)
+
+    PRINT "Car Fee:", car1.calculateFee(13.5)
+    PRINT "Bike Fee:", bike1.calculateFee(12.0)
+    PRINT "Truck Fee:", truck1.calculateFee(14.0)
+END
