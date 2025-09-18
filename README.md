@@ -23,8 +23,6 @@ Each branch contains a series of tasks organized by **day**, ensuring consistent
 
 ## 🌿 Branch Descriptions
 
----
-
 ### 1. 🔹 `main`
 
 This is the **base branch** of the repository. It includes:
