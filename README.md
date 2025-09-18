@@ -20,7 +20,6 @@ This repository consists of the following main branches/modules:
 Each branch contains a series of tasks organized by **day**, ensuring consistent and structured learning.
 
 ---
----
 
 ## 🌿 Branch Descriptions
 
