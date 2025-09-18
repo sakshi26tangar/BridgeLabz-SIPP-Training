@@ -84,12 +84,14 @@ This workshop builds a **Smart City Transport Management System** using **Java 8
 
 #### `Links`
 
-| Workshop     | Description                                                          | Link                                                                               |
-|--------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Workshop 01  | Basic Java simulations: coffee shop, voting, and parking lot system  | [Workshop_01(28-06-25)](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)) |
-| Workshop 02  | OOP-focused interface-based cab fare calculator and class demo       | [Workshop_02](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_02) |
-| Workshop 03  | E-Wallet app with personal/business wallet, interface, transactions  | [Workshop_03_EWalletApp](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_03_EWalletApp) |
-| Workshop 04  | Real-world problems: browser nav and social media notification feed  | [Workshop_04_ProbStatements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_04_ProbStatements) |
+| Workshop     | Description                                                          | Link                                                                                 |
+|--------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Workshop 01  | Basic Java simulations: coffee shop, voting, and parking lot system  | [Workshop_01(28-06-25)](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_01(28-06-25)) |
+| Workshop 02  | OOP-focused interface-based cab fare calculator and class demo       | [Workshop_02](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_02) |
+| Workshop 03  | E-Wallet app with personal/business wallet, interface, transactions  | [Workshop_03_EWalletApp](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_03_EWalletApp) |
+| Workshop 04  | Real-world problems: browser nav and social media notification feed  | [Workshop_04_ProbStatements](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_04_ProbStatements) |
+| Workshop 05  | Smart City transport & service management with Java 8 features       | [Workshop_05_SmartCity](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Workshop/Workshop_05_SmartCityTransport) |
+
 
   
 ---
