@@ -4,12 +4,6 @@ Welcome to the official repository of **BridgeLabz** – a learning and developm
 
 ---
 
-## 🚀 BridgeLabz SIPP Training
-
-This repository contains Java projects and problem statements developed during the **BridgeLabz Summer Internship Program (SIPP)**. It is organized into multiple branches, each focusing on a specific area such as Core Java, Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), and hands-on Workshops.
-
----
-
 ## 📁 Repository Structure
 
 This repository consists of the following main branches/modules:
