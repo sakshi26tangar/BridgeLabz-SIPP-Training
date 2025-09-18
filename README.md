@@ -69,23 +69,11 @@ This workshop includes hands-on OOP-based Java programs simulating real-world sy
 - `BrowserNavigation.java`: Simulates browser tab navigation using Stack and Queue.
 - `SocialMediaNotification.java`: Mimics a social media notification feed using a Queue.
 
-**🎬 MovieTimeApp (inside `/Movie time App` folder):**
-
-- `MainApp.java`: Main driver class for sorting and displaying movie shows.
-- `Show.java`: Class representing a movie show.
-- `ShowScheduler.java`: Utility class to sort shows by time using selection sort.
-
-**📚 LibraryBookCheckoutSystem (inside `/LibraryBookCheckoutSystem` folder):**
-
-- Contains classes to simulate book checkout, return, and tracking using OOP principles.
-
-**🛰 GPS Based Routes (inside `/GPS_Based_Routes` folder):**
-
-- Implements a route tracker system that manages driver checkpoints using custom linked lists and generics.
-
-**📝 OnlineExamSystem (inside `/OnlineExamSystem` folder):**
-
-- Manages online exams with subjects, difficulty levels, questions, answers, and student submissions using OOP and collections.
+**Folders:**
+- LibraryBookCheckoutSystem
+- Movie time App
+- OnlineExamSystem
+- GPS_Based_Routes
 
 
 #### ✅ Workshop 05 — Smart City Transport & Service Management
