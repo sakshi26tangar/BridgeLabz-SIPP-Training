@@ -87,6 +87,15 @@ This workshop includes hands-on OOP-based Java programs simulating real-world sy
 
 - Manages online exams with subjects, difficulty levels, questions, answers, and student submissions using OOP and collections.
 
+
+#### ✅ Workshop 05 — Smart City Transport & Service Management
+This workshop builds a **Smart City Transport Management System** using **Java 8 features**:
+- Uses **Streams & Lambda expressions** for filtering, mapping, and aggregating transport data.  
+- Implements **default & static methods in interfaces** for service contracts.  
+- Demonstrates **functional interfaces** (e.g., `Predicate`, `Consumer`) for flexible operations.  
+- Applies OOP principles with aggregation, association, and composition in a real-world context.  
+
+  
 ---
 
 ### 3. 🔹 `core-java`
@@ -145,6 +154,7 @@ This branch covers **Java Generics, Collections Framework, Streams, Exceptions, 
 - Java Streams (filter, map, reduce, pipeline operations)
 - Exception Handling (try-catch, custom exceptions, best practices)
 - Regex and JUnit Testing (pattern matching, unit testing in Java)
+- Annotations and Reflection (metadata, runtime inspection, custom annotations)
 
 ---
 
@@ -223,14 +233,16 @@ This branch explores **modern Java 8 features** that improve functional-style pr
 
 ### 6. `Generics&Collections`
 
-| Day / Folder Name               | Description                                     | Link                                                                               |
-|---------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------|
-| Day-01_Introduction_to_Generics | Basics of Generics, type safety, parameterized classes | [Day-01_Introduction_to_Generics](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-01_Introduction_to_Generics) |
-| Day-02_Collections              | Working with List, Set, Map, and Collection utilities | [Day-02_Collections](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-02_Collections) |
-| Day-03_JavaStreams              | Stream API usage, filtering, mapping, reducing   | [Day-03_JavaStreams](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-03_JavaStreams) |
-| Day-04_Exceptions               | Exception handling, custom exceptions, best practices | [Day-04_Exceptions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-04_Exceptions) |
-| Day-05_RegexAndJunit            | Regular Expressions and Unit Testing with JUnit | [Day-05_RegexAndJunit](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-05_RegexAndJunit) |
-| Pseudo-Code                     | Supporting pseudo-code examples for better understanding | [Pseudo-Code](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Pseudo-Code) |
+| Day / Folder Name               | Description                                                | Link                                                                               |
+|---------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Day-01_Introduction_to_Generics | Basics of Generics, type safety, parameterized classes     | [Day-01_Introduction_to_Generics](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-01_Introduction_to_Generics) |
+| Day-02_Collections              | Working with List, Set, Map, and Collection utilities      | [Day-02_Collections](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-02_Collections) |
+| Day-03_JavaStreams              | Stream API usage, filtering, mapping, reducing             | [Day-03_JavaStreams](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-03_JavaStreams) |
+| Day-04_Exceptions               | Exception handling, custom exceptions, best practices      | [Day-04_Exceptions](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-04_Exceptions) |
+| Day-05_RegexAndJunit            | Regular Expressions and Unit Testing with JUnit            | [Day-05_RegexAndJunit](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-05_RegexAndJunit) |
+| Day-06_Annoations_and_Reflections | Annotations (built-in & custom) and Reflection API usage | [Day-06_Annoations_and_Reflections](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Day-06_Annoations_and_Reflections) |
+| Pseudo-Code                     | Supporting pseudo-code examples for better understanding  | [Pseudo-Code](https://github.com/sakshi26tangar/BridgeLabz-SIPP-Training/tree/Generics&Collections/Pseudo-Code) |
+
 
 ---
 
